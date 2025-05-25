@@ -19,7 +19,8 @@ namespace KelimeEzberleme
 
         private void button_Giris_Click(object sender, EventArgs e)
         {
-
+            FormSifremiUnuttum sifre = new FormSifremiUnuttum();
+            sifre.ShowDialog();
         }
 
         private void label_SifremiUnuttum_Click(object sender, EventArgs e)
@@ -27,6 +28,12 @@ namespace KelimeEzberleme
             FormSifremiUnuttum sifre = new FormSifremiUnuttum();
             sifre.ShowDialog();
             
+        }
+
+        private void label_KayitOl_Click(object sender, EventArgs e)
+        {
+            FormKullaniciKayit kayit = new FormKullaniciKayit();
+            kayit.ShowDialog();
         }
     }
 }

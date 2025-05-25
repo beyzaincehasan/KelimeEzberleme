@@ -41,9 +41,10 @@ namespace KelimeEzberleme
             // 
             // button_Giris
             // 
-            this.button_Giris.Location = new System.Drawing.Point(319, 161);
+            this.button_Giris.Location = new System.Drawing.Point(425, 198);
+            this.button_Giris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Giris.Name = "button_Giris";
-            this.button_Giris.Size = new System.Drawing.Size(80, 38);
+            this.button_Giris.Size = new System.Drawing.Size(107, 47);
             this.button_Giris.TabIndex = 0;
             this.button_Giris.Text = "Giriş";
             this.button_Giris.UseVisualStyleBackColor = true;
@@ -51,33 +52,39 @@ namespace KelimeEzberleme
             // 
             // textBox_KullaniciAdi
             // 
-            this.textBox_KullaniciAdi.Location = new System.Drawing.Point(206, 98);
+            this.textBox_KullaniciAdi.Location = new System.Drawing.Point(275, 121);
+            this.textBox_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_KullaniciAdi.Name = "textBox_KullaniciAdi";
-            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(100, 20);
+            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(132, 22);
             this.textBox_KullaniciAdi.TabIndex = 1;
             // 
             // textBox_Sifre
             // 
-            this.textBox_Sifre.Location = new System.Drawing.Point(206, 136);
+            this.textBox_Sifre.Location = new System.Drawing.Point(275, 167);
+            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Sifre.Size = new System.Drawing.Size(132, 22);
             this.textBox_Sifre.TabIndex = 2;
             // 
             // label_KullaniciAdi
             // 
             this.label_KullaniciAdi.AutoSize = true;
-            this.label_KullaniciAdi.Location = new System.Drawing.Point(86, 98);
+            this.label_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_KullaniciAdi.Location = new System.Drawing.Point(115, 121);
+            this.label_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_KullaniciAdi.Name = "label_KullaniciAdi";
-            this.label_KullaniciAdi.Size = new System.Drawing.Size(64, 13);
+            this.label_KullaniciAdi.Size = new System.Drawing.Size(101, 20);
             this.label_KullaniciAdi.TabIndex = 3;
             this.label_KullaniciAdi.Text = "Kullanıcı Adı";
             // 
             // label_Sifre
             // 
             this.label_Sifre.AutoSize = true;
-            this.label_Sifre.Location = new System.Drawing.Point(86, 139);
+            this.label_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_Sifre.Location = new System.Drawing.Point(115, 171);
+            this.label_Sifre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Sifre.Name = "label_Sifre";
-            this.label_Sifre.Size = new System.Drawing.Size(28, 13);
+            this.label_Sifre.Size = new System.Drawing.Size(44, 20);
             this.label_Sifre.TabIndex = 4;
             this.label_Sifre.Text = "Şifre";
             // 
@@ -85,10 +92,11 @@ namespace KelimeEzberleme
             // 
             this.label_SifremiUnuttum.AutoSize = true;
             this.label_SifremiUnuttum.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_SifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label_SifremiUnuttum.Location = new System.Drawing.Point(351, 228);
+            this.label_SifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_SifremiUnuttum.Location = new System.Drawing.Point(440, 281);
+            this.label_SifremiUnuttum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_SifremiUnuttum.Name = "label_SifremiUnuttum";
-            this.label_SifremiUnuttum.Size = new System.Drawing.Size(81, 13);
+            this.label_SifremiUnuttum.Size = new System.Drawing.Size(142, 24);
             this.label_SifremiUnuttum.TabIndex = 5;
             this.label_SifremiUnuttum.Text = "Şifremi Unuttum";
             this.label_SifremiUnuttum.Click += new System.EventHandler(this.label_SifremiUnuttum_Click);
@@ -97,27 +105,30 @@ namespace KelimeEzberleme
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(80, 20);
+            this.label1.Location = new System.Drawing.Point(107, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 42);
+            this.label1.Size = new System.Drawing.Size(401, 54);
             this.label1.TabIndex = 6;
             this.label1.Text = "Kelime Ezberleme";
             // 
             // label_KayitOl
             // 
             this.label_KayitOl.AutoSize = true;
-            this.label_KayitOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label_KayitOl.Location = new System.Drawing.Point(12, 228);
+            this.label_KayitOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_KayitOl.Location = new System.Drawing.Point(16, 281);
+            this.label_KayitOl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_KayitOl.Name = "label_KayitOl";
-            this.label_KayitOl.Size = new System.Drawing.Size(43, 13);
+            this.label_KayitOl.Size = new System.Drawing.Size(73, 24);
             this.label_KayitOl.TabIndex = 7;
             this.label_KayitOl.Text = "Kayıt Ol";
+            this.label_KayitOl.Click += new System.EventHandler(this.label_KayitOl_Click);
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 259);
+            this.ClientSize = new System.Drawing.Size(604, 319);
             this.Controls.Add(this.label_KayitOl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_SifremiUnuttum);
@@ -126,6 +137,7 @@ namespace KelimeEzberleme
             this.Controls.Add(this.textBox_Sifre);
             this.Controls.Add(this.textBox_KullaniciAdi);
             this.Controls.Add(this.button_Giris);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLogin";
             this.Text = "Form1";
             this.ResumeLayout(false);
