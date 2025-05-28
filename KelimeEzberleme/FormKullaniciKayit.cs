@@ -32,13 +32,13 @@ namespace KelimeEzberleme
 
                 SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
                 con.Open();
-                SqlCommand komut = new SqlCommand("INSERT INTO Users (UserName, FirstName,LastName,Password,Mail)" +
-                    " VALUES (@UserName, @FirstName,@LastName,@Password,@Mail)", con);
-                komut.Parameters.AddWithValue("@UserName", textBox_KullaniciAdi.Text);
-                komut.Parameters.AddWithValue("@FirstName", textBox_Ad.Text);
-                komut.Parameters.AddWithValue("@LastName", textBox_Soyad.Text);
-                komut.Parameters.AddWithValue("@Password", textBox_Sifre.Text);
-                komut.Parameters.AddWithValue("@Mail", textBox_Mail.Text);
+                SqlCommand komut = new SqlCommand("kullanicikaydet @UserName="+ textBox_KullaniciAdi.Text + "" +
+                    ",@FirstName='" + textBox_KullaniciAdi.Text + "' " +
+                    ",@LastName='" + textBox_KullaniciAdi.Text + "'  "+                   
+                    ",@Password='" + textBox_KullaniciAdi.Text + " ' "+
+                    ",@Mail='" + textBox_KullaniciAdi.Text + "'  ", con);
+      
+              
                 komut.ExecuteNonQuery();
                 con.Close();
 

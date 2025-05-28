@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormKelimeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKelimeEkle.Designer.cs">
+      <DependentUpon>FormKelimeEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKullaniciKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormKelimeEkle.resx">
+      <DependentUpon>FormKelimeEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKullaniciKayit.resx">
       <DependentUpon>FormKullaniciKayit.cs</DependentUpon>
     </EmbeddedResource>
