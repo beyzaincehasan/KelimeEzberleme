@@ -47,25 +47,28 @@ namespace KelimeEzberleme
             // label_Sifre
             // 
             this.label_Sifre.AutoSize = true;
+            this.label_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label_Sifre.Location = new System.Drawing.Point(45, 108);
             this.label_Sifre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Sifre.Name = "label_Sifre";
-            this.label_Sifre.Size = new System.Drawing.Size(37, 17);
+            this.label_Sifre.Size = new System.Drawing.Size(49, 20);
             this.label_Sifre.TabIndex = 7;
             this.label_Sifre.Text = "Şifre";
             // 
             // label_KullaniciAdi
             // 
             this.label_KullaniciAdi.AutoSize = true;
+            this.label_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label_KullaniciAdi.Location = new System.Drawing.Point(45, 53);
             this.label_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_KullaniciAdi.Name = "label_KullaniciAdi";
-            this.label_KullaniciAdi.Size = new System.Drawing.Size(84, 17);
+            this.label_KullaniciAdi.Size = new System.Drawing.Size(114, 20);
             this.label_KullaniciAdi.TabIndex = 6;
             this.label_KullaniciAdi.Text = "Kullanıcı Adı";
             // 
             // button_Kayit
             // 
+            this.button_Kayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button_Kayit.Location = new System.Drawing.Point(281, 406);
             this.button_Kayit.Margin = new System.Windows.Forms.Padding(4);
             this.button_Kayit.Name = "button_Kayit";
@@ -93,7 +96,7 @@ namespace KelimeEzberleme
             // 
             // textBox_Soyad
             // 
-            this.textBox_Soyad.Location = new System.Drawing.Point(205, 258);
+            this.textBox_Soyad.Location = new System.Drawing.Point(205, 266);
             this.textBox_Soyad.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Soyad.Name = "textBox_Soyad";
             this.textBox_Soyad.Size = new System.Drawing.Size(183, 22);
@@ -110,26 +113,28 @@ namespace KelimeEzberleme
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(45, 266);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 17);
+            this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 11;
             this.label1.Text = "Soyadı";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(45, 211);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 17);
+            this.label2.Size = new System.Drawing.Size(36, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Adı";
             // 
             // textBox_Mail
             // 
-            this.textBox_Mail.Location = new System.Drawing.Point(205, 313);
+            this.textBox_Mail.Location = new System.Drawing.Point(205, 322);
             this.textBox_Mail.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Mail.Name = "textBox_Mail";
             this.textBox_Mail.Size = new System.Drawing.Size(183, 22);
@@ -138,10 +143,11 @@ namespace KelimeEzberleme
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(45, 322);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 17);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "E-Posta";
             // 
@@ -156,10 +162,11 @@ namespace KelimeEzberleme
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(45, 159);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 17);
+            this.label4.Size = new System.Drawing.Size(115, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Şifre  Tekrar";
             // 

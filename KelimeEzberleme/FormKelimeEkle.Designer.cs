@@ -29,104 +29,124 @@ namespace KelimeEzberleme
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox_Sifre_Tekrar = new System.Windows.Forms.TextBox();
+            this.textBox_Gorsel_Url = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox_Sifre = new System.Windows.Forms.TextBox();
-            this.textBox_KullaniciAdi = new System.Windows.Forms.TextBox();
+            this.textBox_Turkish = new System.Windows.Forms.TextBox();
+            this.textBox_Eng = new System.Windows.Forms.TextBox();
             this.label_Sifre = new System.Windows.Forms.Label();
             this.label_Kelime = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_Kaydet = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox_Sifre_Tekrar
+            // textBox_Gorsel_Url
             // 
-            this.textBox_Sifre_Tekrar.Location = new System.Drawing.Point(201, 197);
-            this.textBox_Sifre_Tekrar.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Sifre_Tekrar.Name = "textBox_Sifre_Tekrar";
-            this.textBox_Sifre_Tekrar.Size = new System.Drawing.Size(183, 22);
-            this.textBox_Sifre_Tekrar.TabIndex = 23;
+            this.textBox_Gorsel_Url.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox_Gorsel_Url.Location = new System.Drawing.Point(200, 152);
+            this.textBox_Gorsel_Url.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Gorsel_Url.Name = "textBox_Gorsel_Url";
+            this.textBox_Gorsel_Url.Size = new System.Drawing.Size(183, 28);
+            this.textBox_Gorsel_Url.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 197);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(40, 152);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 17);
+            this.label4.Size = new System.Drawing.Size(71, 24);
             this.label4.TabIndex = 22;
             this.label4.Text = "Görsel";
             // 
-            // textBox_Sifre
+            // textBox_Turkish
             // 
-            this.textBox_Sifre.Location = new System.Drawing.Point(201, 146);
-            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(183, 22);
-            this.textBox_Sifre.TabIndex = 21;
+            this.textBox_Turkish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox_Turkish.Location = new System.Drawing.Point(200, 101);
+            this.textBox_Turkish.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Turkish.Name = "textBox_Turkish";
+            this.textBox_Turkish.Size = new System.Drawing.Size(183, 28);
+            this.textBox_Turkish.TabIndex = 21;
             // 
-            // textBox_KullaniciAdi
+            // textBox_Eng
             // 
-            this.textBox_KullaniciAdi.Location = new System.Drawing.Point(201, 91);
-            this.textBox_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_KullaniciAdi.Name = "textBox_KullaniciAdi";
-            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(183, 22);
-            this.textBox_KullaniciAdi.TabIndex = 20;
+            this.textBox_Eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox_Eng.Location = new System.Drawing.Point(200, 46);
+            this.textBox_Eng.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Eng.Name = "textBox_Eng";
+            this.textBox_Eng.Size = new System.Drawing.Size(183, 28);
+            this.textBox_Eng.TabIndex = 20;
             // 
             // label_Sifre
             // 
             this.label_Sifre.AutoSize = true;
-            this.label_Sifre.Location = new System.Drawing.Point(41, 146);
+            this.label_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_Sifre.Location = new System.Drawing.Point(40, 101);
             this.label_Sifre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Sifre.Name = "label_Sifre";
-            this.label_Sifre.Size = new System.Drawing.Size(52, 17);
+            this.label_Sifre.Size = new System.Drawing.Size(75, 24);
             this.label_Sifre.TabIndex = 19;
             this.label_Sifre.Text = "Türkçe";
             // 
             // label_Kelime
             // 
             this.label_Kelime.AutoSize = true;
-            this.label_Kelime.Location = new System.Drawing.Point(41, 91);
+            this.label_Kelime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_Kelime.Location = new System.Drawing.Point(40, 46);
             this.label_Kelime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Kelime.Name = "label_Kelime";
-            this.label_Kelime.Size = new System.Drawing.Size(58, 17);
+            this.label_Kelime.Size = new System.Drawing.Size(87, 24);
             this.label_Kelime.TabIndex = 18;
             this.label_Kelime.Text = "İngilizce";
             // 
-            // button1
+            // button_Kaydet
             // 
-            this.button1.Location = new System.Drawing.Point(437, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 56);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_Kaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button_Kaydet.Location = new System.Drawing.Point(435, 368);
+            this.button_Kaydet.Name = "button_Kaydet";
+            this.button_Kaydet.Size = new System.Drawing.Size(110, 66);
+            this.button_Kaydet.TabIndex = 24;
+            this.button_Kaydet.Text = "Kaydet";
+            this.button_Kaydet.UseVisualStyleBackColor = true;
+            this.button_Kaydet.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(404, 185);
+            this.button2.Location = new System.Drawing.Point(403, 145);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 42);
             this.button2.TabIndex = 25;
             this.button2.Text = "Dosya Seç";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(44, 223);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(271, 211);
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormKelimeEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 359);
+            this.ClientSize = new System.Drawing.Size(557, 456);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox_Sifre_Tekrar);
+            this.Controls.Add(this.button_Kaydet);
+            this.Controls.Add(this.textBox_Gorsel_Url);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox_Sifre);
-            this.Controls.Add(this.textBox_KullaniciAdi);
+            this.Controls.Add(this.textBox_Turkish);
+            this.Controls.Add(this.textBox_Eng);
             this.Controls.Add(this.label_Sifre);
             this.Controls.Add(this.label_Kelime);
             this.Name = "FormKelimeEkle";
             this.Text = "FormKelimeEkle";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,13 +154,14 @@ namespace KelimeEzberleme
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_Sifre_Tekrar;
+        private System.Windows.Forms.TextBox textBox_Gorsel_Url;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox_Sifre;
-        private System.Windows.Forms.TextBox textBox_KullaniciAdi;
+        private System.Windows.Forms.TextBox textBox_Turkish;
+        private System.Windows.Forms.TextBox textBox_Eng;
         private System.Windows.Forms.Label label_Sifre;
         private System.Windows.Forms.Label label_Kelime;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_Kaydet;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

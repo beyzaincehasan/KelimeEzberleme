@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaMenu.Designer.cs">
+      <DependentUpon>FormAnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAyarlar.Designer.cs">
+      <DependentUpon>FormAyarlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKelimeEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfil.Designer.cs">
+      <DependentUpon>FormProfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +91,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnaMenu.resx">
+      <DependentUpon>FormAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAyarlar.resx">
+      <DependentUpon>FormAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKelimeEkle.resx">
       <DependentUpon>FormKelimeEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfil.resx">
+      <DependentUpon>FormProfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSifremiUnuttum.resx">
       <DependentUpon>FormSifremiUnuttum.cs</DependentUpon>

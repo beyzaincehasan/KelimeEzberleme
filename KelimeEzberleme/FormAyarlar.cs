@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace KelimeEzberleme
 {
-    public partial class FormKelimeEkle : Form
+    public partial class FormAyarlar : Form
     {
-        public FormKelimeEkle()
+        public FormAyarlar()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

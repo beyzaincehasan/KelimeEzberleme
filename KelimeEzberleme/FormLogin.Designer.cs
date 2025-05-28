@@ -42,7 +42,7 @@ namespace KelimeEzberleme
             // button_Giris
             // 
             this.button_Giris.Location = new System.Drawing.Point(425, 198);
-            this.button_Giris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Giris.Margin = new System.Windows.Forms.Padding(4);
             this.button_Giris.Name = "button_Giris";
             this.button_Giris.Size = new System.Drawing.Size(107, 47);
             this.button_Giris.TabIndex = 0;
@@ -52,39 +52,41 @@ namespace KelimeEzberleme
             // 
             // textBox_KullaniciAdi
             // 
+            this.textBox_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox_KullaniciAdi.Location = new System.Drawing.Point(275, 121);
-            this.textBox_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_KullaniciAdi.Name = "textBox_KullaniciAdi";
-            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(132, 22);
+            this.textBox_KullaniciAdi.Size = new System.Drawing.Size(132, 27);
             this.textBox_KullaniciAdi.TabIndex = 1;
             // 
             // textBox_Sifre
             // 
+            this.textBox_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox_Sifre.Location = new System.Drawing.Point(275, 167);
-            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(132, 22);
+            this.textBox_Sifre.Size = new System.Drawing.Size(132, 27);
             this.textBox_Sifre.TabIndex = 2;
             // 
             // label_KullaniciAdi
             // 
             this.label_KullaniciAdi.AutoSize = true;
-            this.label_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label_KullaniciAdi.Location = new System.Drawing.Point(115, 121);
             this.label_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_KullaniciAdi.Name = "label_KullaniciAdi";
-            this.label_KullaniciAdi.Size = new System.Drawing.Size(101, 20);
+            this.label_KullaniciAdi.Size = new System.Drawing.Size(114, 20);
             this.label_KullaniciAdi.TabIndex = 3;
             this.label_KullaniciAdi.Text = "Kullanıcı Adı";
             // 
             // label_Sifre
             // 
             this.label_Sifre.AutoSize = true;
-            this.label_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label_Sifre.Location = new System.Drawing.Point(115, 171);
             this.label_Sifre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Sifre.Name = "label_Sifre";
-            this.label_Sifre.Size = new System.Drawing.Size(44, 20);
+            this.label_Sifre.Size = new System.Drawing.Size(49, 20);
             this.label_Sifre.TabIndex = 4;
             this.label_Sifre.Text = "Şifre";
             // 
@@ -137,7 +139,7 @@ namespace KelimeEzberleme
             this.Controls.Add(this.textBox_Sifre);
             this.Controls.Add(this.textBox_KullaniciAdi);
             this.Controls.Add(this.button_Giris);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogin";
             this.Text = "Form1";
             this.ResumeLayout(false);
