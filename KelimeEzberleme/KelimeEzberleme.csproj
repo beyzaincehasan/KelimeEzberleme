@@ -89,6 +89,12 @@
     <Compile Include="FormSifremiUnuttum.Designer.cs">
       <DependentUpon>FormSifremiUnuttum.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSinav.Designer.cs">
+      <DependentUpon>FormSinav.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAnaMenu.resx">
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSifremiUnuttum.resx">
       <DependentUpon>FormSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSinav.resx">
+      <DependentUpon>FormSinav.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

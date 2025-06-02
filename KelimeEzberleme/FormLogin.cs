@@ -25,7 +25,7 @@ namespace KelimeEzberleme
 
         private void label_SifremiUnuttum_Click(object sender, EventArgs e)
         {
-            FormSifremiUnuttum sifre = new FormSifremiUnuttum();
+             FormSifremiUnuttum sifre = new FormSifremiUnuttum();
             sifre.ShowDialog();
             
         }
