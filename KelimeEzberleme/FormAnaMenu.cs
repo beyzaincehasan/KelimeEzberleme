@@ -35,5 +35,11 @@ namespace KelimeEzberleme
         {
 
         }
+
+        private void button_KelimeEzberle_Click(object sender, EventArgs e)
+        {
+            FormSinav ezber = new FormSinav();
+            ezber.ShowDialog();
+        }
     }
 }

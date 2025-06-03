@@ -96,6 +96,7 @@ namespace KelimeEzberleme
             this.button_KelimeEzberle.TabIndex = 0;
             this.button_KelimeEzberle.Text = "Kelime Ezberle";
             this.button_KelimeEzberle.UseVisualStyleBackColor = true;
+            this.button_KelimeEzberle.Click += new System.EventHandler(this.button_KelimeEzberle_Click);
             // 
             // FormAnaMenu
             // 
