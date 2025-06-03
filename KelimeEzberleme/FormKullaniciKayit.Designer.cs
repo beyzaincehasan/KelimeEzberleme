@@ -191,6 +191,7 @@ namespace KelimeEzberleme
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormKullaniciKayit";
             this.Text = "FormKullaniciKayit";
+            this.Load += new System.EventHandler(this.FormKullaniciKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

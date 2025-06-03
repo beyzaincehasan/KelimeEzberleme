@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace KelimeEzberleme
 {
@@ -16,9 +17,56 @@ namespace KelimeEzberleme
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+                if (textBox_Eng.Text=="" || textBox_Turkish.Text == "")
+                {
+                    MessageBox.Show("Kelime boş bırakılamaz");
+                    return;
+                }
+
+                con.Open();
+                SqlCommand komut = new SqlCommand("kelimekaydet @UserID=" + ((FormAnaMenu)Application.OpenForms["FormAnaMenu"]).userID.ToString()+ "" +
+                    ",@EngWordName='" + textBox_Eng.Text + "' " +
+                    ",@TurWordName='" + textBox_Turkish.Text + "'  " +
+                    ",@PictureURL='" + textBox_Gorsel_Url.Text + " ' " +""
+                   , con);
+
+
+                komut.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Kayıt Yapıldı");
+                this.Close();
+            }
+            catch (SqlException a)
+            {
+
+                MessageBox.Show(a.Message);
+
+            }
+
+        }
+
+        private void buttonGorselSec_Click(object sender, EventArgs e)
+        {
+            string dosya;
+            OpenFileDialog ResmiAc = new OpenFileDialog();
+            ResmiAc.Filter = "resim dosyaları(*.jpg)|*.jpg|bütün dosyalar|*.*";
+
+
+
+            if (ResmiAc.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(ResmiAc.FileName);
+                dosya = ResmiAc.FileName;
+                Convert.ToString(dosya);
+                textBox_Gorsel_Url.Text = dosya;
+            }
 
         }
     }

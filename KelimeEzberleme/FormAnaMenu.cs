@@ -12,6 +12,8 @@ namespace KelimeEzberleme
 {
     public partial class FormAnaMenu : Form
     {
+
+        public int userID;
         public FormAnaMenu()
         {
             InitializeComponent();
@@ -27,6 +29,11 @@ namespace KelimeEzberleme
         {
             FormAyarlar ayar = new FormAyarlar();
             ayar.ShowDialog();
+        }
+
+        private void FormAnaMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

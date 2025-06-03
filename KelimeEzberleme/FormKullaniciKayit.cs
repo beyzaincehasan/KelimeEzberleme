@@ -53,5 +53,10 @@ namespace KelimeEzberleme
             }
           
         }
+
+        private void FormKullaniciKayit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

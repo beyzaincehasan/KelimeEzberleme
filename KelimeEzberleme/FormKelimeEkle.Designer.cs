@@ -36,7 +36,7 @@ namespace KelimeEzberleme
             this.label_Sifre = new System.Windows.Forms.Label();
             this.label_Kelime = new System.Windows.Forms.Label();
             this.button_Kaydet = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonGorselSec = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -112,15 +112,16 @@ namespace KelimeEzberleme
             this.button_Kaydet.UseVisualStyleBackColor = true;
             this.button_Kaydet.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonGorselSec
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(403, 145);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 42);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Dosya Seç";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonGorselSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonGorselSec.Location = new System.Drawing.Point(403, 145);
+            this.buttonGorselSec.Name = "buttonGorselSec";
+            this.buttonGorselSec.Size = new System.Drawing.Size(125, 42);
+            this.buttonGorselSec.TabIndex = 25;
+            this.buttonGorselSec.Text = "Dosya Seç";
+            this.buttonGorselSec.UseVisualStyleBackColor = true;
+            this.buttonGorselSec.Click += new System.EventHandler(this.buttonGorselSec_Click);
             // 
             // pictureBox1
             // 
@@ -136,7 +137,7 @@ namespace KelimeEzberleme
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 456);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonGorselSec);
             this.Controls.Add(this.button_Kaydet);
             this.Controls.Add(this.textBox_Gorsel_Url);
             this.Controls.Add(this.label4);
@@ -161,7 +162,7 @@ namespace KelimeEzberleme
         private System.Windows.Forms.Label label_Sifre;
         private System.Windows.Forms.Label label_Kelime;
         private System.Windows.Forms.Button button_Kaydet;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonGorselSec;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

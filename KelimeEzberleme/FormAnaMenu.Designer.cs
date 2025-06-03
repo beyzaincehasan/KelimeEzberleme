@@ -105,6 +105,7 @@ namespace KelimeEzberleme
             this.Controls.Add(this.panel1);
             this.Name = "FormAnaMenu";
             this.Text = "FormAnaMenu";
+            this.Load += new System.EventHandler(this.FormAnaMenu_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
