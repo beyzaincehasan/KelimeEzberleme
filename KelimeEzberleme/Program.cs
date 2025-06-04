@@ -16,7 +16,7 @@ namespace KelimeEzberleme
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAnaMenu());
+            Application.Run(new FormLogin());
         }
     }
 }

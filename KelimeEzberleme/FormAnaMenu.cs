@@ -33,7 +33,7 @@ namespace KelimeEzberleme
 
         private void FormAnaMenu_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button_KelimeEzberle_Click(object sender, EventArgs e)

@@ -44,7 +44,7 @@ namespace KelimeEzberleme
            {
             SqlDataAdapter da = new SqlDataAdapter();
             SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "kelimegetir @UserID=" + ((FormAnaMenu)Application.OpenForms["FormAnaMenu"]).userID.ToString() + "";
+            cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
             da.SelectCommand = cmd;
             DataSet ds = new DataSet();
            
@@ -58,6 +58,10 @@ namespace KelimeEzberleme
             radioButton_Sec3.Text = ds.Tables[1].Rows[2][1].ToString();
             radioButton_Sec4.Text = ds.Tables[1].Rows[3][1].ToString();
 
+           
+
+
+
 
             con.Close();
             da.Dispose();
@@ -65,7 +69,37 @@ namespace KelimeEzberleme
 
         private void button_Control_Click(object sender, EventArgs e)
         {
+            if (SoruTurkWordName!=CevapTurkWordName)
+            {
+                MessageBox.Show("yanlış cevap");
+            }
 
+
+            SqlDataAdapter da = new SqlDataAdapter();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "kelimedogrula @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "" +
+                "@EngWordName=" + label_kelime.Text + "";
+            da.SelectCommand = cmd;
+        }
+
+        private void radioButton_Sec1_CheckedChanged(object sender, EventArgs e)
+        {
+            CevapTurkWordName = radioButton_Sec1.Text;
+        }
+
+        private void radioButton_Sec2_CheckedChanged(object sender, EventArgs e)
+        {
+            CevapTurkWordName = radioButton_Sec2.Text;
+        }
+
+        private void radioButton_Sec3_CheckedChanged(object sender, EventArgs e)
+        {
+            CevapTurkWordName = radioButton_Sec3.Text;
+        }
+
+        private void radioButton_Sec4_CheckedChanged(object sender, EventArgs e)
+        {
+            CevapTurkWordName = radioButton_Sec4.Text;
         }
     }
 }

@@ -45,7 +45,7 @@ namespace KelimeEzberleme
             this.button_Giris.Margin = new System.Windows.Forms.Padding(4);
             this.button_Giris.Name = "button_Giris";
             this.button_Giris.Size = new System.Drawing.Size(107, 47);
-            this.button_Giris.TabIndex = 0;
+            this.button_Giris.TabIndex = 2;
             this.button_Giris.Text = "Giriş";
             this.button_Giris.UseVisualStyleBackColor = true;
             this.button_Giris.Click += new System.EventHandler(this.button_Giris_Click);
@@ -57,7 +57,7 @@ namespace KelimeEzberleme
             this.textBox_KullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_KullaniciAdi.Name = "textBox_KullaniciAdi";
             this.textBox_KullaniciAdi.Size = new System.Drawing.Size(132, 27);
-            this.textBox_KullaniciAdi.TabIndex = 1;
+            this.textBox_KullaniciAdi.TabIndex = 0;
             // 
             // textBox_Sifre
             // 
@@ -66,7 +66,7 @@ namespace KelimeEzberleme
             this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Sifre.Name = "textBox_Sifre";
             this.textBox_Sifre.Size = new System.Drawing.Size(132, 27);
-            this.textBox_Sifre.TabIndex = 2;
+            this.textBox_Sifre.TabIndex = 1;
             // 
             // label_KullaniciAdi
             // 
@@ -99,7 +99,7 @@ namespace KelimeEzberleme
             this.label_SifremiUnuttum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_SifremiUnuttum.Name = "label_SifremiUnuttum";
             this.label_SifremiUnuttum.Size = new System.Drawing.Size(142, 24);
-            this.label_SifremiUnuttum.TabIndex = 5;
+            this.label_SifremiUnuttum.TabIndex = 4;
             this.label_SifremiUnuttum.Text = "Şifremi Unuttum";
             this.label_SifremiUnuttum.Click += new System.EventHandler(this.label_SifremiUnuttum_Click);
             // 
@@ -122,12 +122,13 @@ namespace KelimeEzberleme
             this.label_KayitOl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_KayitOl.Name = "label_KayitOl";
             this.label_KayitOl.Size = new System.Drawing.Size(73, 24);
-            this.label_KayitOl.TabIndex = 7;
+            this.label_KayitOl.TabIndex = 3;
             this.label_KayitOl.Text = "Kayıt Ol";
             this.label_KayitOl.Click += new System.EventHandler(this.label_KayitOl_Click);
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.button_Giris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 319);

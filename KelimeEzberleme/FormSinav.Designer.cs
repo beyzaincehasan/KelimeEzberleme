@@ -75,6 +75,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec4.TabIndex = 3;
             this.radioButton_Sec4.TabStop = true;
             this.radioButton_Sec4.UseVisualStyleBackColor = true;
+            this.radioButton_Sec4.CheckedChanged += new System.EventHandler(this.radioButton_Sec4_CheckedChanged);
             // 
             // radioButton_Sec3
             // 
@@ -85,6 +86,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec3.TabIndex = 2;
             this.radioButton_Sec3.TabStop = true;
             this.radioButton_Sec3.UseVisualStyleBackColor = true;
+            this.radioButton_Sec3.CheckedChanged += new System.EventHandler(this.radioButton_Sec3_CheckedChanged);
             // 
             // radioButton_Sec2
             // 
@@ -95,6 +97,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec2.TabIndex = 1;
             this.radioButton_Sec2.TabStop = true;
             this.radioButton_Sec2.UseVisualStyleBackColor = true;
+            this.radioButton_Sec2.CheckedChanged += new System.EventHandler(this.radioButton_Sec2_CheckedChanged);
             // 
             // radioButton_Sec1
             // 
@@ -105,6 +108,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec1.TabIndex = 0;
             this.radioButton_Sec1.TabStop = true;
             this.radioButton_Sec1.UseVisualStyleBackColor = true;
+            this.radioButton_Sec1.CheckedChanged += new System.EventHandler(this.radioButton_Sec1_CheckedChanged);
             // 
             // button_Control
             // 

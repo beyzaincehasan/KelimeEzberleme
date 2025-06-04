@@ -30,7 +30,7 @@ namespace KelimeEzberleme
                 }
 
                 con.Open();
-                SqlCommand komut = new SqlCommand("kelimekaydet @UserID=" + ((FormAnaMenu)Application.OpenForms["FormAnaMenu"]).userID.ToString()+ "" +
+                SqlCommand komut = new SqlCommand("kelimekaydet @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString()+ "" +
                     ",@EngWordName='" + textBox_Eng.Text + "' " +
                     ",@TurWordName='" + textBox_Turkish.Text + "'  " +
                     ",@PictureURL='" + textBox_Gorsel_Url.Text + " ' " +""
