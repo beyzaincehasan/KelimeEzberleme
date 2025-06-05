@@ -39,6 +39,13 @@ namespace KelimeEzberleme
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_geri = new System.Windows.Forms.Button();
             this.button_ileri = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label_GunlukKelimeSayisi = new System.Windows.Forms.Label();
+            this.label_CalisilanKelimeSayisi = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label_KalanKelimeSayisi = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,12 +56,13 @@ namespace KelimeEzberleme
             this.label_kelime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label_kelime.Location = new System.Drawing.Point(514, 181);
             this.label_kelime.Name = "label_kelime";
-            this.label_kelime.Size = new System.Drawing.Size(101, 36);
+            this.label_kelime.Size = new System.Drawing.Size(110, 36);
             this.label_kelime.TabIndex = 3;
-            this.label_kelime.Text = "label1";
+            this.label_kelime.Text = "Kelime";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.radioButton_Sec4);
             this.panel1.Controls.Add(this.radioButton_Sec3);
@@ -138,6 +146,7 @@ namespace KelimeEzberleme
             this.button_geri.Size = new System.Drawing.Size(118, 80);
             this.button_geri.TabIndex = 1;
             this.button_geri.UseVisualStyleBackColor = true;
+            this.button_geri.Visible = false;
             // 
             // button_ileri
             // 
@@ -148,12 +157,91 @@ namespace KelimeEzberleme
             this.button_ileri.Size = new System.Drawing.Size(110, 80);
             this.button_ileri.TabIndex = 0;
             this.button_ileri.UseVisualStyleBackColor = true;
+            this.button_ileri.Visible = false;
+            this.button_ileri.Click += new System.EventHandler(this.button_ileri_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(476, 795);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 36);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Kelime:";
+            // 
+            // label_GunlukKelimeSayisi
+            // 
+            this.label_GunlukKelimeSayisi.AutoSize = true;
+            this.label_GunlukKelimeSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_GunlukKelimeSayisi.Location = new System.Drawing.Point(686, 795);
+            this.label_GunlukKelimeSayisi.Name = "label_GunlukKelimeSayisi";
+            this.label_GunlukKelimeSayisi.Size = new System.Drawing.Size(26, 36);
+            this.label_GunlukKelimeSayisi.TabIndex = 7;
+            this.label_GunlukKelimeSayisi.Text = "-";
+            // 
+            // label_CalisilanKelimeSayisi
+            // 
+            this.label_CalisilanKelimeSayisi.AutoSize = true;
+            this.label_CalisilanKelimeSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_CalisilanKelimeSayisi.Location = new System.Drawing.Point(686, 831);
+            this.label_CalisilanKelimeSayisi.Name = "label_CalisilanKelimeSayisi";
+            this.label_CalisilanKelimeSayisi.Size = new System.Drawing.Size(26, 36);
+            this.label_CalisilanKelimeSayisi.TabIndex = 9;
+            this.label_CalisilanKelimeSayisi.Text = "-";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(476, 831);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 36);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Çalışılan:";
+            // 
+            // label_KalanKelimeSayisi
+            // 
+            this.label_KalanKelimeSayisi.AutoSize = true;
+            this.label_KalanKelimeSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_KalanKelimeSayisi.Location = new System.Drawing.Point(686, 869);
+            this.label_KalanKelimeSayisi.Name = "label_KalanKelimeSayisi";
+            this.label_KalanKelimeSayisi.Size = new System.Drawing.Size(26, 36);
+            this.label_KalanKelimeSayisi.TabIndex = 11;
+            this.label_KalanKelimeSayisi.Text = "-";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(476, 869);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 36);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Kalan :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(323, 831);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 36);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Bugün";
             // 
             // FormSinav
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1162, 939);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label_KalanKelimeSayisi);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_CalisilanKelimeSayisi);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_GunlukKelimeSayisi);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Control);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_kelime);
@@ -172,9 +260,6 @@ namespace KelimeEzberleme
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button_ileri;
-        private System.Windows.Forms.Button button_geri;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_kelime;
         private System.Windows.Forms.Panel panel1;
@@ -183,5 +268,14 @@ namespace KelimeEzberleme
         private System.Windows.Forms.RadioButton radioButton_Sec2;
         private System.Windows.Forms.RadioButton radioButton_Sec1;
         private System.Windows.Forms.Button button_Control;
+        private System.Windows.Forms.Button button_geri;
+        private System.Windows.Forms.Button button_ileri;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_GunlukKelimeSayisi;
+        private System.Windows.Forms.Label label_CalisilanKelimeSayisi;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_KalanKelimeSayisi;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

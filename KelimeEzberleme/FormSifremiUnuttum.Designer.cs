@@ -29,27 +29,27 @@ namespace KelimeEzberleme
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_Eposta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button_Gonder = new System.Windows.Forms.Button();
             this.panel_SifreSifirlama = new System.Windows.Forms.Panel();
-            this.button_Kaydet = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button_SifreKaydet = new System.Windows.Forms.Button();
+            this.textBox_sifre2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_sifre1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_Dogrulama = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_SifreSifirlama.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox3
+            // textBox_Eposta
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 36);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 22);
-            this.textBox3.TabIndex = 17;
+            this.textBox_Eposta.Location = new System.Drawing.Point(127, 36);
+            this.textBox_Eposta.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Eposta.Name = "textBox_Eposta";
+            this.textBox_Eposta.Size = new System.Drawing.Size(276, 22);
+            this.textBox_Eposta.TabIndex = 17;
             // 
             // label3
             // 
@@ -64,7 +64,7 @@ namespace KelimeEzberleme
             // button_Gonder
             // 
             this.button_Gonder.Location = new System.Drawing.Point(297, 68);
-            this.button_Gonder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_Gonder.Margin = new System.Windows.Forms.Padding(4);
             this.button_Gonder.Name = "button_Gonder";
             this.button_Gonder.Size = new System.Drawing.Size(107, 47);
             this.button_Gonder.TabIndex = 18;
@@ -74,36 +74,36 @@ namespace KelimeEzberleme
             // 
             // panel_SifreSifirlama
             // 
-            this.panel_SifreSifirlama.Controls.Add(this.button_Kaydet);
-            this.panel_SifreSifirlama.Controls.Add(this.textBox4);
+            this.panel_SifreSifirlama.Controls.Add(this.button_SifreKaydet);
+            this.panel_SifreSifirlama.Controls.Add(this.textBox_sifre2);
             this.panel_SifreSifirlama.Controls.Add(this.label4);
-            this.panel_SifreSifirlama.Controls.Add(this.textBox2);
+            this.panel_SifreSifirlama.Controls.Add(this.textBox_sifre1);
             this.panel_SifreSifirlama.Controls.Add(this.label2);
             this.panel_SifreSifirlama.Location = new System.Drawing.Point(45, 202);
-            this.panel_SifreSifirlama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_SifreSifirlama.Margin = new System.Windows.Forms.Padding(4);
             this.panel_SifreSifirlama.Name = "panel_SifreSifirlama";
             this.panel_SifreSifirlama.Size = new System.Drawing.Size(405, 174);
             this.panel_SifreSifirlama.TabIndex = 19;
             this.panel_SifreSifirlama.Visible = false;
             // 
-            // button_Kaydet
+            // button_SifreKaydet
             // 
-            this.button_Kaydet.Location = new System.Drawing.Point(135, 114);
-            this.button_Kaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button_Kaydet.Name = "button_Kaydet";
-            this.button_Kaydet.Size = new System.Drawing.Size(107, 47);
-            this.button_Kaydet.TabIndex = 20;
-            this.button_Kaydet.Text = "Kaydet";
-            this.button_Kaydet.UseVisualStyleBackColor = true;
-            this.button_Kaydet.Click += new System.EventHandler(this.button_Kaydet_Click);
+            this.button_SifreKaydet.Location = new System.Drawing.Point(135, 114);
+            this.button_SifreKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.button_SifreKaydet.Name = "button_SifreKaydet";
+            this.button_SifreKaydet.Size = new System.Drawing.Size(107, 47);
+            this.button_SifreKaydet.TabIndex = 20;
+            this.button_SifreKaydet.Text = "Kaydet";
+            this.button_SifreKaydet.UseVisualStyleBackColor = true;
+            this.button_SifreKaydet.Click += new System.EventHandler(this.button_Kaydet_Click);
             // 
-            // textBox4
+            // textBox_sifre2
             // 
-            this.textBox4.Location = new System.Drawing.Point(111, 73);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 22);
-            this.textBox4.TabIndex = 30;
+            this.textBox_sifre2.Location = new System.Drawing.Point(111, 73);
+            this.textBox_sifre2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_sifre2.Name = "textBox_sifre2";
+            this.textBox_sifre2.Size = new System.Drawing.Size(131, 22);
+            this.textBox_sifre2.TabIndex = 30;
             // 
             // label4
             // 
@@ -115,13 +115,13 @@ namespace KelimeEzberleme
             this.label4.TabIndex = 29;
             this.label4.Text = "Şifre Tekrar";
             // 
-            // textBox2
+            // textBox_sifre1
             // 
-            this.textBox2.Location = new System.Drawing.Point(111, 26);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(131, 22);
-            this.textBox2.TabIndex = 28;
+            this.textBox_sifre1.Location = new System.Drawing.Point(111, 26);
+            this.textBox_sifre1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_sifre1.Name = "textBox_sifre1";
+            this.textBox_sifre1.Size = new System.Drawing.Size(131, 22);
+            this.textBox_sifre1.TabIndex = 28;
             // 
             // label2
             // 
@@ -137,7 +137,7 @@ namespace KelimeEzberleme
             // 
             this.textBox_Dogrulama.Enabled = false;
             this.textBox_Dogrulama.Location = new System.Drawing.Point(167, 142);
-            this.textBox_Dogrulama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Dogrulama.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Dogrulama.Name = "textBox_Dogrulama";
             this.textBox_Dogrulama.Size = new System.Drawing.Size(120, 22);
             this.textBox_Dogrulama.TabIndex = 26;
@@ -159,11 +159,11 @@ namespace KelimeEzberleme
             this.ClientSize = new System.Drawing.Size(483, 447);
             this.Controls.Add(this.panel_SifreSifirlama);
             this.Controls.Add(this.button_Gonder);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox_Eposta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_Dogrulama);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormSifremiUnuttum";
             this.Text = "FormSifremiUnuttum";
             this.panel_SifreSifirlama.ResumeLayout(false);
@@ -175,16 +175,16 @@ namespace KelimeEzberleme
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_Eposta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button_Gonder;
         private System.Windows.Forms.Panel panel_SifreSifirlama;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_sifre2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_sifre1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox_Dogrulama;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button_Kaydet;
+        private System.Windows.Forms.Button button_SifreKaydet;
     }
 }

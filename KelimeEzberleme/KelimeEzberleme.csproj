@@ -153,5 +153,8 @@
   <ItemGroup>
     <None Include="Resources\Checkmark_80px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_96px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

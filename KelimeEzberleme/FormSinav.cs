@@ -33,15 +33,44 @@ namespace KelimeEzberleme
         private void FormSinav_Load(object sender, EventArgs e)
         {
             kelimegetir();
-        
-           
-
-          
+            kelimesayisigetir();
+                     
         }
+        void kelimesayisigetir()
+        {
+            SqlDataAdapter da = new SqlDataAdapter();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "kelimesayisigetir @ParametreID = 1, @UserID =" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
+            da.SelectCommand = cmd;
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            label_GunlukKelimeSayisi.Text=     ds.Tables[0].Rows[0][0].ToString();
+            label_CalisilanKelimeSayisi.Text = ds.Tables[1].Rows[0][0].ToString();
+            label_KalanKelimeSayisi.Text =     ds.Tables[2].Rows[0][0].ToString();
+            if (label_KalanKelimeSayisi.Text=="0")
+            {
+                panel1.Enabled = false;
+                button_ileri.Enabled = false;
+                button_Control.Enabled = false;
+
+                MessageBox.Show("Günlük Kelime Sayısına Ulaşıldı");
+            }
+
+        }
+
         void kelimegetir()
 
-
            {
+            foreach (Control item in panel1.Controls)
+            {
+                if (item.GetType().ToString() == "System.Windows.Forms.RadioButton") item.BackColor = Color.White  ;
+               
+            }
+
+          
+
             SqlDataAdapter da = new SqlDataAdapter();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
@@ -69,22 +98,81 @@ namespace KelimeEzberleme
 
         private void button_Control_Click(object sender, EventArgs e)
         {
-            if (SoruTurkWordName!=CevapTurkWordName)
-            {
-                MessageBox.Show("yanlış cevap");
+            try
+            { 
+                if (SoruTurkWordName != CevapTurkWordName)
+                {
+                    button_Control.Enabled = false;
+                    panel1.Enabled = false;
+
+                    con.Open();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandText = "kelimedogrula @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "" +
+                        ",@WordID=" + SoruWordID + ",@CevapDurum='F'";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    foreach (Control item in panel1.Controls)
+                    {
+                        if (item.GetType().ToString() == "System.Windows.Forms.RadioButton")
+
+                            if (item.Text == SoruTurkWordName)
+                            {
+                                item.BackColor = Color.Green;
+                               
+                            }
+
+
+                        if (item.Text == CevapTurkWordName) 
+                        {
+                            item.BackColor = Color.Red;
+                        }
+
+                    }
+                    
+                }
+                else
+                {
+                    button_Control.Enabled = false;
+                    panel1.Enabled = false;
+                   con.Open();
+                    SqlCommand cmd = con.CreateCommand();
+                    cmd.CommandText = "kelimedogrula @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "" +
+                        ",@WordID=" + SoruWordID + ",@CevapDurum='T'";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                    foreach (Control item in panel1.Controls)
+                    {
+                        if (item.GetType().ToString() == "System.Windows.Forms.RadioButton")
+
+                            if (item.Text == SoruTurkWordName)
+                            {
+                                item.BackColor = Color.Green;
+                            }
+
+                    }
+
+                   
+                }
+
+
+                kelimesayisigetir();
+                button_ileri.Visible = true;
+
+
             }
+            catch (Exception)
+            {
 
-
-            SqlDataAdapter da = new SqlDataAdapter();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "kelimedogrula @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "" +
-                "@EngWordName=" + label_kelime.Text + "";
-            da.SelectCommand = cmd;
+                throw;
+            }
+           
         }
 
         private void radioButton_Sec1_CheckedChanged(object sender, EventArgs e)
         {
             CevapTurkWordName = radioButton_Sec1.Text;
+           
         }
 
         private void radioButton_Sec2_CheckedChanged(object sender, EventArgs e)
@@ -100,6 +188,23 @@ namespace KelimeEzberleme
         private void radioButton_Sec4_CheckedChanged(object sender, EventArgs e)
         {
             CevapTurkWordName = radioButton_Sec4.Text;
+        }
+
+        private void button_geri_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_ileri_Click(object sender, EventArgs e)
+        {
+            kelimegetir();
+            kelimesayisigetir();
+            radioButton_Sec1.Checked = false;
+            radioButton_Sec2.Checked = false;
+            radioButton_Sec3.Checked = false;
+            radioButton_Sec4.Checked = false;
+            button_Control.Enabled = true;
+            panel1.Enabled = true;
         }
     }
 }
