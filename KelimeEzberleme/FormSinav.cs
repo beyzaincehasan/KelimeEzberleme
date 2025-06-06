@@ -34,6 +34,7 @@ namespace KelimeEzberleme
         {
             kelimegetir();
             kelimesayisigetir();
+         
                      
         }
         void kelimesayisigetir()
@@ -99,7 +100,12 @@ namespace KelimeEzberleme
         private void button_Control_Click(object sender, EventArgs e)
         {
             try
-            { 
+            {
+                if (CevapTurkWordName is null)
+                {
+                    MessageBox.Show("Lütfen Bir Cevap Seçiniz");
+                    return;
+                }
                 if (SoruTurkWordName != CevapTurkWordName)
                 {
                     button_Control.Enabled = false;

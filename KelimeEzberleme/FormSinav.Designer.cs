@@ -80,8 +80,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec4.Location = new System.Drawing.Point(32, 316);
             this.radioButton_Sec4.Name = "radioButton_Sec4";
             this.radioButton_Sec4.Size = new System.Drawing.Size(17, 16);
-            this.radioButton_Sec4.TabIndex = 3;
-            this.radioButton_Sec4.TabStop = true;
+            this.radioButton_Sec4.TabIndex = 103;
             this.radioButton_Sec4.UseVisualStyleBackColor = true;
             this.radioButton_Sec4.CheckedChanged += new System.EventHandler(this.radioButton_Sec4_CheckedChanged);
             // 
@@ -91,8 +90,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec3.Location = new System.Drawing.Point(32, 231);
             this.radioButton_Sec3.Name = "radioButton_Sec3";
             this.radioButton_Sec3.Size = new System.Drawing.Size(17, 16);
-            this.radioButton_Sec3.TabIndex = 2;
-            this.radioButton_Sec3.TabStop = true;
+            this.radioButton_Sec3.TabIndex = 102;
             this.radioButton_Sec3.UseVisualStyleBackColor = true;
             this.radioButton_Sec3.CheckedChanged += new System.EventHandler(this.radioButton_Sec3_CheckedChanged);
             // 
@@ -102,8 +100,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec2.Location = new System.Drawing.Point(32, 135);
             this.radioButton_Sec2.Name = "radioButton_Sec2";
             this.radioButton_Sec2.Size = new System.Drawing.Size(17, 16);
-            this.radioButton_Sec2.TabIndex = 1;
-            this.radioButton_Sec2.TabStop = true;
+            this.radioButton_Sec2.TabIndex = 101;
             this.radioButton_Sec2.UseVisualStyleBackColor = true;
             this.radioButton_Sec2.CheckedChanged += new System.EventHandler(this.radioButton_Sec2_CheckedChanged);
             // 
@@ -113,8 +110,7 @@ namespace KelimeEzberleme
             this.radioButton_Sec1.Location = new System.Drawing.Point(32, 47);
             this.radioButton_Sec1.Name = "radioButton_Sec1";
             this.radioButton_Sec1.Size = new System.Drawing.Size(17, 16);
-            this.radioButton_Sec1.TabIndex = 0;
-            this.radioButton_Sec1.TabStop = true;
+            this.radioButton_Sec1.TabIndex = 100;
             this.radioButton_Sec1.UseVisualStyleBackColor = true;
             this.radioButton_Sec1.CheckedChanged += new System.EventHandler(this.radioButton_Sec1_CheckedChanged);
             // 

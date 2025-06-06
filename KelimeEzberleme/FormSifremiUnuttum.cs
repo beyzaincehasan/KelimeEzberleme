@@ -112,8 +112,7 @@ namespace KelimeEzberleme
 
         }
         string DogrulamaKodu;
-    
-
+      
      
         void mailgonder()
         {
@@ -138,9 +137,6 @@ namespace KelimeEzberleme
                     str = str + letter;
                 }
                
-
-
-
 
                 DogrulamaKodu = str.ToString();
 
@@ -171,11 +167,7 @@ namespace KelimeEzberleme
            
         }
 
-        Random rand = new Random();
-
-        public const string Alphabet =
-        "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
+       
        
     }
 }
