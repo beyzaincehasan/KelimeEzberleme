@@ -91,5 +91,10 @@ namespace KelimeEzberleme
             FormKullaniciKayit kayit = new FormKullaniciKayit();
             kayit.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

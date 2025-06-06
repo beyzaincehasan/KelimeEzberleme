@@ -98,7 +98,7 @@ namespace KelimeEzberleme
             this.label_SifremiUnuttum.Location = new System.Drawing.Point(440, 281);
             this.label_SifremiUnuttum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_SifremiUnuttum.Name = "label_SifremiUnuttum";
-            this.label_SifremiUnuttum.Size = new System.Drawing.Size(142, 24);
+            this.label_SifremiUnuttum.Size = new System.Drawing.Size(137, 22);
             this.label_SifremiUnuttum.TabIndex = 4;
             this.label_SifremiUnuttum.Text = "Şifremi Unuttum";
             this.label_SifremiUnuttum.Click += new System.EventHandler(this.label_SifremiUnuttum_Click);
@@ -110,9 +110,10 @@ namespace KelimeEzberleme
             this.label1.Location = new System.Drawing.Point(107, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 54);
+            this.label1.Size = new System.Drawing.Size(466, 54);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Kelime Ezberleme";
+            this.label1.Text = "Kelime Ezberlememe";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label_KayitOl
             // 
@@ -121,7 +122,7 @@ namespace KelimeEzberleme
             this.label_KayitOl.Location = new System.Drawing.Point(16, 281);
             this.label_KayitOl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_KayitOl.Name = "label_KayitOl";
-            this.label_KayitOl.Size = new System.Drawing.Size(73, 24);
+            this.label_KayitOl.Size = new System.Drawing.Size(73, 22);
             this.label_KayitOl.TabIndex = 3;
             this.label_KayitOl.Text = "Kayıt Ol";
             this.label_KayitOl.Click += new System.EventHandler(this.label_KayitOl_Click);
