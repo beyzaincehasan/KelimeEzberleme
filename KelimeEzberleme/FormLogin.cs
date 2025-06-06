@@ -33,7 +33,7 @@ namespace KelimeEzberleme
                     MessageBox.Show("Kullanıcı adı yada şifre boş olamaz");
                     return;
                 }
-
+                con.Close();
                 con.Open();
                 SqlDataAdapter da = new SqlDataAdapter();
                 SqlCommand cmd = con.CreateCommand();
@@ -63,17 +63,8 @@ namespace KelimeEzberleme
                     menu.Show();
                     this.Hide();
 
-                }
-
-               
-
-
-
-
-
-
-
-             
+                }         
+                             
             
                 con.Close();
 

@@ -166,6 +166,7 @@ namespace KelimeEzberleme
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormSifremiUnuttum";
             this.Text = "FormSifremiUnuttum";
+            this.Load += new System.EventHandler(this.FormSifremiUnuttum_Load);
             this.panel_SifreSifirlama.ResumeLayout(false);
             this.panel_SifreSifirlama.PerformLayout();
             this.ResumeLayout(false);
