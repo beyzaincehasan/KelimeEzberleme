@@ -83,7 +83,7 @@ namespace KelimeEzberleme
                 cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
                 da.SelectCommand = cmd;
                 DataSet ds = new DataSet();
-
+                
                 da.Fill(ds);
                 label_kelime.Text = ds.Tables[0].Rows[0][0].ToString();
                 SoruWordID =        ds.Tables[0].Rows[0][2].ToString();

@@ -35,12 +35,14 @@ namespace KelimeEzberleme
             this.button_Rapor = new System.Windows.Forms.Button();
             this.button_KelimeEkle = new System.Windows.Forms.Button();
             this.button_KelimeEzberle = new System.Windows.Forms.Button();
+            this.button_Bulmaca = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.panelMenu.Controls.Add(this.button_Bulmaca);
             this.panelMenu.Controls.Add(this.labelLogo);
             this.panelMenu.Controls.Add(this.button_Ayarlar);
             this.panelMenu.Controls.Add(this.button_Rapor);
@@ -70,7 +72,7 @@ namespace KelimeEzberleme
             this.button_Ayarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Ayarlar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_Ayarlar.ForeColor = System.Drawing.Color.White;
-            this.button_Ayarlar.Location = new System.Drawing.Point(25, 324);
+            this.button_Ayarlar.Location = new System.Drawing.Point(25, 401);
             this.button_Ayarlar.Name = "button_Ayarlar";
             this.button_Ayarlar.Size = new System.Drawing.Size(160, 48);
             this.button_Ayarlar.TabIndex = 3;
@@ -123,6 +125,21 @@ namespace KelimeEzberleme
             this.button_KelimeEzberle.UseVisualStyleBackColor = false;
             this.button_KelimeEzberle.Click += new System.EventHandler(this.button_KelimeEzberle_Click);
             // 
+            // button_Bulmaca
+            // 
+            this.button_Bulmaca.BackColor = System.Drawing.Color.SeaGreen;
+            this.button_Bulmaca.FlatAppearance.BorderSize = 0;
+            this.button_Bulmaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Bulmaca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.button_Bulmaca.ForeColor = System.Drawing.Color.White;
+            this.button_Bulmaca.Location = new System.Drawing.Point(25, 324);
+            this.button_Bulmaca.Name = "button_Bulmaca";
+            this.button_Bulmaca.Size = new System.Drawing.Size(160, 48);
+            this.button_Bulmaca.TabIndex = 100;
+            this.button_Bulmaca.Text = "Bulmaca";
+            this.button_Bulmaca.UseVisualStyleBackColor = false;
+            this.button_Bulmaca.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormAnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,5 +165,6 @@ namespace KelimeEzberleme
         private System.Windows.Forms.Button button_KelimeEkle;
         private System.Windows.Forms.Button button_Rapor;
         private System.Windows.Forms.Button button_Ayarlar;
+        private System.Windows.Forms.Button button_Bulmaca;
     }
 }

@@ -47,5 +47,11 @@ namespace KelimeEzberleme
             FormRapor rapor = new FormRapor();
             rapor.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormBulmaca bul = new FormBulmaca();
+            bul.ShowDialog();
+        }
     }
 }
