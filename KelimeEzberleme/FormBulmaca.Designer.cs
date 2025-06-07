@@ -48,7 +48,7 @@ namespace KelimeEzberleme
             // 
             this.txtTahmin.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.txtTahmin.Location = new System.Drawing.Point(37, 479);
-            this.txtTahmin.MaxLength = 5;
+            this.txtTahmin.MaxLength = 1;
             this.txtTahmin.Name = "txtTahmin";
             this.txtTahmin.Size = new System.Drawing.Size(137, 39);
             this.txtTahmin.TabIndex = 1;
