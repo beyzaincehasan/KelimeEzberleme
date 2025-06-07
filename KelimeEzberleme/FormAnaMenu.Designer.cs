@@ -52,6 +52,7 @@ namespace KelimeEzberleme
             // 
             // button_Ayarlar
             // 
+            this.button_Ayarlar.BackgroundImage = global::KelimeEzberleme.Properties.Resources.automation_80px;
             this.button_Ayarlar.Location = new System.Drawing.Point(26, 787);
             this.button_Ayarlar.Name = "button_Ayarlar";
             this.button_Ayarlar.Size = new System.Drawing.Size(111, 78);

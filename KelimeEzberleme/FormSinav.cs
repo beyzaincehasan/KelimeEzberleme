@@ -50,6 +50,7 @@ namespace KelimeEzberleme
             label_GunlukKelimeSayisi.Text=     ds.Tables[0].Rows[0][0].ToString();
             label_CalisilanKelimeSayisi.Text = ds.Tables[1].Rows[0][0].ToString();
             label_KalanKelimeSayisi.Text =     ds.Tables[2].Rows[0][0].ToString();
+
             if (label_KalanKelimeSayisi.Text=="0")
             {
                 panel1.Enabled = false;
@@ -64,37 +65,47 @@ namespace KelimeEzberleme
         void kelimegetir()
 
            {
-            foreach (Control item in panel1.Controls)
+
+            try
             {
-                if (item.GetType().ToString() == "System.Windows.Forms.RadioButton") item.BackColor = Color.White  ;
-               
+                foreach (Control item in panel1.Controls)
+                {
+                    if (item.GetType().ToString() == "System.Windows.Forms.RadioButton") item.BackColor = Color.White;
+
+                }
+
+
+
+                SqlDataAdapter da = new SqlDataAdapter();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
+                da.SelectCommand = cmd;
+                DataSet ds = new DataSet();
+
+                da.Fill(ds);
+                label_kelime.Text = ds.Tables[0].Rows[0][0].ToString();
+                SoruWordID = ds.Tables[0].Rows[0][2].ToString();
+                SoruTurkWordName = ds.Tables[0].Rows[0][1].ToString();
+
+                radioButton_Sec1.Text = ds.Tables[1].Rows[0][1].ToString();
+                radioButton_Sec2.Text = ds.Tables[1].Rows[1][1].ToString();
+                radioButton_Sec3.Text = ds.Tables[1].Rows[2][1].ToString();
+                radioButton_Sec4.Text = ds.Tables[1].Rows[3][1].ToString();
+
+
+
+
+
+
+                con.Close();
+                da.Dispose();
             }
+            catch (SqlException a )
+            {
 
-          
-
-            SqlDataAdapter da = new SqlDataAdapter();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
-            da.SelectCommand = cmd;
-            DataSet ds = new DataSet();
-           
-            da.Fill(ds);     
-            label_kelime.Text = ds.Tables[0].Rows[0][0].ToString();
-            SoruWordID =        ds.Tables[0].Rows[0][2].ToString();
-            SoruTurkWordName=   ds.Tables[0].Rows[0][1].ToString();
-
-            radioButton_Sec1.Text = ds.Tables[1].Rows[0][1].ToString();
-            radioButton_Sec2.Text = ds.Tables[1].Rows[1][1].ToString();
-            radioButton_Sec3.Text = ds.Tables[1].Rows[2][1].ToString();
-            radioButton_Sec4.Text = ds.Tables[1].Rows[3][1].ToString();
-
-           
-
-
-
-
-            con.Close();
-            da.Dispose();
+                MessageBox.Show(a.Message);
+            }
+            
         }
 
         private void button_Control_Click(object sender, EventArgs e)

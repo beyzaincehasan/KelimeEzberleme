@@ -38,13 +38,15 @@ namespace KelimeEzberleme
             this.button_Kaydet = new System.Windows.Forms.Button();
             this.buttonGorselSec = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox_Konular = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_Gorsel_Url
             // 
             this.textBox_Gorsel_Url.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox_Gorsel_Url.Location = new System.Drawing.Point(200, 152);
+            this.textBox_Gorsel_Url.Location = new System.Drawing.Point(200, 243);
             this.textBox_Gorsel_Url.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Gorsel_Url.Name = "textBox_Gorsel_Url";
             this.textBox_Gorsel_Url.Size = new System.Drawing.Size(183, 28);
@@ -54,7 +56,7 @@ namespace KelimeEzberleme
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(40, 152);
+            this.label4.Location = new System.Drawing.Point(40, 243);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 24);
@@ -104,7 +106,7 @@ namespace KelimeEzberleme
             // button_Kaydet
             // 
             this.button_Kaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Kaydet.Location = new System.Drawing.Point(435, 368);
+            this.button_Kaydet.Location = new System.Drawing.Point(435, 473);
             this.button_Kaydet.Name = "button_Kaydet";
             this.button_Kaydet.Size = new System.Drawing.Size(110, 66);
             this.button_Kaydet.TabIndex = 24;
@@ -115,7 +117,7 @@ namespace KelimeEzberleme
             // buttonGorselSec
             // 
             this.buttonGorselSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonGorselSec.Location = new System.Drawing.Point(403, 145);
+            this.buttonGorselSec.Location = new System.Drawing.Point(403, 236);
             this.buttonGorselSec.Name = "buttonGorselSec";
             this.buttonGorselSec.Size = new System.Drawing.Size(125, 42);
             this.buttonGorselSec.TabIndex = 25;
@@ -125,17 +127,41 @@ namespace KelimeEzberleme
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(44, 223);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 328);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(271, 211);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(40, 178);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 24);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Konu";
+            // 
+            // comboBox_Konular
+            // 
+            this.comboBox_Konular.DisplayMember = "SubjectAciklama";
+            this.comboBox_Konular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.comboBox_Konular.FormattingEnabled = true;
+            this.comboBox_Konular.Location = new System.Drawing.Point(200, 175);
+            this.comboBox_Konular.Name = "comboBox_Konular";
+            this.comboBox_Konular.Size = new System.Drawing.Size(189, 30);
+            this.comboBox_Konular.TabIndex = 28;
+            this.comboBox_Konular.ValueMember = "SubjectID";
+            // 
             // FormKelimeEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 456);
+            this.ClientSize = new System.Drawing.Size(618, 575);
+            this.Controls.Add(this.comboBox_Konular);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonGorselSec);
             this.Controls.Add(this.button_Kaydet);
@@ -147,6 +173,7 @@ namespace KelimeEzberleme
             this.Controls.Add(this.label_Kelime);
             this.Name = "FormKelimeEkle";
             this.Text = "FormKelimeEkle";
+            this.Load += new System.EventHandler(this.FormKelimeEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,5 +191,7 @@ namespace KelimeEzberleme
         private System.Windows.Forms.Button button_Kaydet;
         private System.Windows.Forms.Button buttonGorselSec;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox_Konular;
     }
 }

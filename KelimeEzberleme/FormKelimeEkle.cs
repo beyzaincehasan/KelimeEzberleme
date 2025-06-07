@@ -69,5 +69,31 @@ namespace KelimeEzberleme
             }
 
         }
+
+        void konugetir()
+        {
+            
+
+
+            con.Close();
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandText = "select SubjectID,SubjectAciklama from Subjects";
+            da.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            comboBox_Konular.DataSource = dt;
+
+            con.Close();
+
+        }
+
+        private void FormKelimeEkle_Load(object sender, EventArgs e)
+        {
+            konugetir();
+        }
     }
 }

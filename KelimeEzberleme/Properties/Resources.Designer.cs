@@ -63,6 +63,16 @@ namespace KelimeEzberleme.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap automation_80px {
+            get {
+                object obj = ResourceManager.GetObject("automation_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Checkmark_80px {
             get {
                 object obj = ResourceManager.GetObject("Checkmark_80px", resourceCulture);
