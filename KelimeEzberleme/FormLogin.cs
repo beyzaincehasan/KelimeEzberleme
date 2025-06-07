@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing.Drawing2D;
 namespace KelimeEzberleme
 {
     public partial class FormLogin : Form
@@ -95,6 +96,19 @@ namespace KelimeEzberleme
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            GraphicsPath path = new GraphicsPath();
+          
+            int radius = 35; // Ne kadar oval olmasını istiyorsan artır/azalt
+            path.AddArc(0, 0, radius, radius, 180, 90);
+            path.AddArc(button_Giris.Width - radius, 0, radius, radius, 270, 90);
+            path.AddArc(button_Giris.Width - radius, button_Giris.Height - radius, radius, radius, 0, 90);
+            path.AddArc(0, button_Giris.Height - radius, radius, radius, 90, 90);
+            path.CloseAllFigures();
+            button_Giris.Region = new Region(path);
         }
     }
 }
