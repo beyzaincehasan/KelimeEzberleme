@@ -110,5 +110,10 @@ namespace KelimeEzberleme
             path.CloseAllFigures();
             button_Giris.Region = new Region(path);
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
