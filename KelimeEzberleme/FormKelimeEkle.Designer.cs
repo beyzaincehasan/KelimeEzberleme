@@ -40,13 +40,15 @@ namespace KelimeEzberleme
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_Konular = new System.Windows.Forms.ComboBox();
+            this.textBox_OrnekCumle = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_Gorsel_Url
             // 
             this.textBox_Gorsel_Url.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox_Gorsel_Url.Location = new System.Drawing.Point(200, 243);
+            this.textBox_Gorsel_Url.Location = new System.Drawing.Point(200, 287);
             this.textBox_Gorsel_Url.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Gorsel_Url.Name = "textBox_Gorsel_Url";
             this.textBox_Gorsel_Url.Size = new System.Drawing.Size(183, 28);
@@ -56,7 +58,7 @@ namespace KelimeEzberleme
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(40, 243);
+            this.label4.Location = new System.Drawing.Point(40, 287);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 24);
@@ -117,7 +119,7 @@ namespace KelimeEzberleme
             // buttonGorselSec
             // 
             this.buttonGorselSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonGorselSec.Location = new System.Drawing.Point(403, 236);
+            this.buttonGorselSec.Location = new System.Drawing.Point(420, 280);
             this.buttonGorselSec.Name = "buttonGorselSec";
             this.buttonGorselSec.Size = new System.Drawing.Size(125, 42);
             this.buttonGorselSec.TabIndex = 25;
@@ -127,7 +129,7 @@ namespace KelimeEzberleme
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(44, 328);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 352);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(271, 211);
             this.pictureBox1.TabIndex = 26;
@@ -147,6 +149,7 @@ namespace KelimeEzberleme
             // comboBox_Konular
             // 
             this.comboBox_Konular.DisplayMember = "SubjectAciklama";
+            this.comboBox_Konular.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Konular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.comboBox_Konular.FormattingEnabled = true;
             this.comboBox_Konular.Location = new System.Drawing.Point(200, 175);
@@ -155,11 +158,33 @@ namespace KelimeEzberleme
             this.comboBox_Konular.TabIndex = 28;
             this.comboBox_Konular.ValueMember = "SubjectID";
             // 
+            // textBox_OrnekCumle
+            // 
+            this.textBox_OrnekCumle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox_OrnekCumle.Location = new System.Drawing.Point(200, 235);
+            this.textBox_OrnekCumle.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_OrnekCumle.Name = "textBox_OrnekCumle";
+            this.textBox_OrnekCumle.Size = new System.Drawing.Size(183, 28);
+            this.textBox_OrnekCumle.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(40, 235);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 24);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Örnek Cümle:";
+            // 
             // FormKelimeEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 575);
+            this.Controls.Add(this.textBox_OrnekCumle);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox_Konular);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -193,5 +218,7 @@ namespace KelimeEzberleme
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox_Konular;
+        private System.Windows.Forms.TextBox textBox_OrnekCumle;
+        private System.Windows.Forms.Label label2;
     }
 }
