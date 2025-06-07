@@ -33,10 +33,10 @@ namespace KelimeEzberleme
                 SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
                 con.Open();
                 SqlCommand komut = new SqlCommand("kullanicikaydet @UserName="+ textBox_KullaniciAdi.Text + "" +
-                    ",@FirstName='" + textBox_KullaniciAdi.Text + "' " +
-                    ",@LastName='" + textBox_KullaniciAdi.Text + "'  "+                   
-                    ",@Password='" + textBox_KullaniciAdi.Text + " ' "+
-                    ",@Mail='" + textBox_KullaniciAdi.Text + "'  ", con);
+                    ",@FirstName='" + textBox_Ad.Text + "' " +
+                    ",@LastName='" + textBox_Soyad.Text + "'  "+                   
+                    ",@Password='" + textBox_Sifre.Text + " ' "+
+                    ",@Mail='" + textBox_Mail.Text + "'  ", con);
       
               
                 komut.ExecuteNonQuery();
