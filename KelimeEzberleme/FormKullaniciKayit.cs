@@ -42,7 +42,7 @@ namespace KelimeEzberleme
                 komut.ExecuteNonQuery();
                 con.Close();
 
-                MessageBox.Show("Kayıt Yapıldı");
+                MessageBox.Show("Kayıt başarılı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             catch (SqlException a)
@@ -55,6 +55,12 @@ namespace KelimeEzberleme
         }
 
         private void FormKullaniciKayit_Load(object sender, EventArgs e)
+        {
+            button_Kayit.MouseEnter += (s, ea) => button_Kayit.BackColor = Color.DarkGreen;
+            button_Kayit.MouseLeave += (s, ea) => button_Kayit.BackColor = Color.SeaGreen;
+        }
+
+        private void panelKayit_Paint(object sender, PaintEventArgs e)
         {
 
         }

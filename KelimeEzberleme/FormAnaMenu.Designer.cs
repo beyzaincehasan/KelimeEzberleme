@@ -57,7 +57,7 @@ namespace KelimeEzberleme
             this.labelLogo.AutoSize = true;
             this.labelLogo.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.labelLogo.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelLogo.Location = new System.Drawing.Point(44, 27);
+            this.labelLogo.Location = new System.Drawing.Point(52, 28);
             this.labelLogo.Name = "labelLogo";
             this.labelLogo.Size = new System.Drawing.Size(113, 46);
             this.labelLogo.TabIndex = 99;
