@@ -45,5 +45,10 @@ namespace KelimeEzberleme
 
             numericUpDown_KelimeSayisi.Value =Convert.ToInt32( ds.Tables[0].Rows[0][2]);
         }
+
+        private void labelBaslik_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
