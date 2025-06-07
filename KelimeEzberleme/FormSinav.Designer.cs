@@ -46,6 +46,7 @@ namespace KelimeEzberleme
             this.label_KalanKelimeSayisi = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label_OrnekCumle = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +55,7 @@ namespace KelimeEzberleme
             // 
             this.label_kelime.AutoSize = true;
             this.label_kelime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label_kelime.Location = new System.Drawing.Point(514, 181);
+            this.label_kelime.Location = new System.Drawing.Point(499, 59);
             this.label_kelime.Name = "label_kelime";
             this.label_kelime.Size = new System.Drawing.Size(110, 36);
             this.label_kelime.TabIndex = 3;
@@ -69,7 +70,7 @@ namespace KelimeEzberleme
             this.panel1.Controls.Add(this.radioButton_Sec2);
             this.panel1.Controls.Add(this.radioButton_Sec1);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.panel1.Location = new System.Drawing.Point(326, 252);
+            this.panel1.Location = new System.Drawing.Point(311, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(393, 407);
             this.panel1.TabIndex = 4;
@@ -226,11 +227,23 @@ namespace KelimeEzberleme
             this.label6.TabIndex = 12;
             this.label6.Text = "Bugün";
             // 
+            // label_OrnekCumle
+            // 
+            this.label_OrnekCumle.AutoSize = true;
+            this.label_OrnekCumle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label_OrnekCumle.Location = new System.Drawing.Point(50, 590);
+            this.label_OrnekCumle.Name = "label_OrnekCumle";
+            this.label_OrnekCumle.Size = new System.Drawing.Size(189, 36);
+            this.label_OrnekCumle.TabIndex = 13;
+            this.label_OrnekCumle.Text = "OrnekCumle";
+            this.label_OrnekCumle.Visible = false;
+            // 
             // FormSinav
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1162, 939);
+            this.Controls.Add(this.label_OrnekCumle);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label_KalanKelimeSayisi);
             this.Controls.Add(this.label5);
@@ -273,5 +286,6 @@ namespace KelimeEzberleme
         private System.Windows.Forms.Label label_KalanKelimeSayisi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label_OrnekCumle;
     }
 }

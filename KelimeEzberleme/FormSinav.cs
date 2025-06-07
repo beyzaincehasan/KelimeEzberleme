@@ -27,6 +27,7 @@ namespace KelimeEzberleme
         string CevapWordID;
         string CevapEngWordName;
         string CevapTurkWordName;
+        string OrnekCumle;
 
         SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
         private DataSet ds = new DataSet();
@@ -84,8 +85,9 @@ namespace KelimeEzberleme
 
                 da.Fill(ds);
                 label_kelime.Text = ds.Tables[0].Rows[0][0].ToString();
-                SoruWordID = ds.Tables[0].Rows[0][2].ToString();
-                SoruTurkWordName = ds.Tables[0].Rows[0][1].ToString();
+                SoruWordID =        ds.Tables[0].Rows[0][2].ToString();
+                SoruTurkWordName =  ds.Tables[0].Rows[0][1].ToString();
+                OrnekCumle=         ds.Tables[0].Rows[0][4].ToString();
 
                 radioButton_Sec1.Text = ds.Tables[1].Rows[0][1].ToString();
                 radioButton_Sec2.Text = ds.Tables[1].Rows[1][1].ToString();
@@ -169,7 +171,8 @@ namespace KelimeEzberleme
 
                     }
 
-                   
+                    label_OrnekCumle.Text = OrnekCumle;
+                    label_OrnekCumle.Visible = true;
                 }
 
 
@@ -222,6 +225,7 @@ namespace KelimeEzberleme
             radioButton_Sec4.Checked = false;
             button_Control.Enabled = true;
             panel1.Enabled = true;
+            label_OrnekCumle.Visible = false;
         }
     }
 }
