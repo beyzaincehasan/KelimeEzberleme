@@ -78,6 +78,7 @@ namespace KelimeEzberleme
             this.button_Rapor.TabIndex = 2;
             this.button_Rapor.Text = "Rapor";
             this.button_Rapor.UseVisualStyleBackColor = true;
+            this.button_Rapor.Click += new System.EventHandler(this.button_Rapor_Click);
             // 
             // button_KelimeEkle
             // 

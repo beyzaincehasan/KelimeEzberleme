@@ -41,5 +41,11 @@ namespace KelimeEzberleme
             FormSinav ezber = new FormSinav();
             ezber.ShowDialog();
         }
+
+        private void button_Rapor_Click(object sender, EventArgs e)
+        {
+            FormRapor rapor = new FormRapor();
+            rapor.ShowDialog();
+        }
     }
 }

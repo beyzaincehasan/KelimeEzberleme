@@ -59,6 +59,7 @@ namespace KelimeEzberleme
                 button_Control.Enabled = false;
 
                 MessageBox.Show("Günlük Kelime Sayısına Ulaşıldı");
+                this.Close();
             }
 
         }
