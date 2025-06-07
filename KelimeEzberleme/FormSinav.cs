@@ -54,7 +54,7 @@ namespace KelimeEzberleme
 
             if (label_KalanKelimeSayisi.Text=="0")
             {
-                panel1.Enabled = false;
+                panelSecenekler.Enabled = false;
                 button_ileri.Enabled = false;
                 button_Control.Enabled = false;
 
@@ -70,7 +70,7 @@ namespace KelimeEzberleme
 
             try
             {
-                foreach (Control item in panel1.Controls)
+                foreach (Control item in panelSecenekler.Controls)
                 {
                     if (item.GetType().ToString() == "System.Windows.Forms.RadioButton") item.BackColor = Color.White;
 
@@ -123,7 +123,7 @@ namespace KelimeEzberleme
                 if (SoruTurkWordName != CevapTurkWordName)
                 {
                     button_Control.Enabled = false;
-                    panel1.Enabled = false;
+                    panelSecenekler.Enabled = false;
 
                     con.Open();
                     SqlCommand cmd = con.CreateCommand();
@@ -131,7 +131,7 @@ namespace KelimeEzberleme
                         ",@WordID=" + SoruWordID + ",@CevapDurum='F'";
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    foreach (Control item in panel1.Controls)
+                    foreach (Control item in panelSecenekler.Controls)
                     {
                         if (item.GetType().ToString() == "System.Windows.Forms.RadioButton")
 
@@ -153,7 +153,7 @@ namespace KelimeEzberleme
                 else
                 {
                     button_Control.Enabled = false;
-                    panel1.Enabled = false;
+                    panelSecenekler.Enabled = false;
                    con.Open();
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = "kelimedogrula @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "" +
@@ -161,7 +161,7 @@ namespace KelimeEzberleme
                     cmd.ExecuteNonQuery();
                     con.Close();
 
-                    foreach (Control item in panel1.Controls)
+                    foreach (Control item in panelSecenekler.Controls)
                     {
                         if (item.GetType().ToString() == "System.Windows.Forms.RadioButton")
 
@@ -225,7 +225,7 @@ namespace KelimeEzberleme
             radioButton_Sec3.Checked = false;
             radioButton_Sec4.Checked = false;
             button_Control.Enabled = true;
-            panel1.Enabled = true;
+            panelSecenekler.Enabled = true;
             label_OrnekCumle.Visible = false;
         }
     }

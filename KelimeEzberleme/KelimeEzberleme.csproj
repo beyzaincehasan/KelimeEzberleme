@@ -59,6 +59,12 @@
     <Compile Include="FormAyarlar.Designer.cs">
       <DependentUpon>FormAyarlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBulmaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBulmaca.Designer.cs">
+      <DependentUpon>FormBulmaca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKelimeEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAyarlar.resx">
       <DependentUpon>FormAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBulmaca.resx">
+      <DependentUpon>FormBulmaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKelimeEkle.resx">
       <DependentUpon>FormKelimeEkle.cs</DependentUpon>
