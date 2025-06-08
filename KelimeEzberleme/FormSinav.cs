@@ -38,7 +38,7 @@ namespace KelimeEzberleme
          
                      
         }
-        void kelimesayisigetir()
+        void kelimesayisigetir()// kullanıcı parametresine bağlı günlük sorulacak kelime sayısı getirildi
         {
             SqlDataAdapter da = new SqlDataAdapter();
             SqlCommand cmd = con.CreateCommand();
@@ -64,7 +64,7 @@ namespace KelimeEzberleme
 
         }
 
-        void kelimegetir()
+        void kelimegetir()// kullanıcı bazlı rastgele 4 kelime getirildi
 
            {
 
@@ -129,7 +129,7 @@ namespace KelimeEzberleme
                     con.Open();
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = "kelimedogrula @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "" +
-                        ",@WordID=" + SoruWordID + ",@CevapDurum='F'";
+                        ",@WordID=" + SoruWordID + ",@CevapDurum='F'";//seçilen şıkkın veritabanında doğruluğu kontrol edilip raddioButtonlar renklendirildi
                     cmd.ExecuteNonQuery();
                     con.Close();
                     foreach (Control item in panelSecenekler.Controls)

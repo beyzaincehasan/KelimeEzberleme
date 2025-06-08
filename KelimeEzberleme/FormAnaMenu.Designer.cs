@@ -51,7 +51,7 @@ namespace KelimeEzberleme
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(233, 764);
+            this.panelMenu.Size = new System.Drawing.Size(288, 764);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -62,9 +62,9 @@ namespace KelimeEzberleme
             this.button_Bulmaca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Bulmaca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_Bulmaca.ForeColor = System.Drawing.Color.White;
-            this.button_Bulmaca.Location = new System.Drawing.Point(25, 324);
+            this.button_Bulmaca.Location = new System.Drawing.Point(22, 352);
             this.button_Bulmaca.Name = "button_Bulmaca";
-            this.button_Bulmaca.Size = new System.Drawing.Size(160, 48);
+            this.button_Bulmaca.Size = new System.Drawing.Size(240, 48);
             this.button_Bulmaca.TabIndex = 100;
             this.button_Bulmaca.Text = "Bulmaca";
             this.button_Bulmaca.UseVisualStyleBackColor = false;
@@ -88,9 +88,9 @@ namespace KelimeEzberleme
             this.button_Ayarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Ayarlar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_Ayarlar.ForeColor = System.Drawing.Color.White;
-            this.button_Ayarlar.Location = new System.Drawing.Point(25, 401);
+            this.button_Ayarlar.Location = new System.Drawing.Point(22, 431);
             this.button_Ayarlar.Name = "button_Ayarlar";
-            this.button_Ayarlar.Size = new System.Drawing.Size(160, 48);
+            this.button_Ayarlar.Size = new System.Drawing.Size(240, 48);
             this.button_Ayarlar.TabIndex = 3;
             this.button_Ayarlar.Text = "Ayarlar";
             this.button_Ayarlar.UseVisualStyleBackColor = false;
@@ -103,9 +103,9 @@ namespace KelimeEzberleme
             this.button_Rapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Rapor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_Rapor.ForeColor = System.Drawing.Color.White;
-            this.button_Rapor.Location = new System.Drawing.Point(25, 247);
+            this.button_Rapor.Location = new System.Drawing.Point(22, 271);
             this.button_Rapor.Name = "button_Rapor";
-            this.button_Rapor.Size = new System.Drawing.Size(160, 48);
+            this.button_Rapor.Size = new System.Drawing.Size(240, 48);
             this.button_Rapor.TabIndex = 2;
             this.button_Rapor.Text = "Rapor";
             this.button_Rapor.UseVisualStyleBackColor = false;
@@ -118,9 +118,9 @@ namespace KelimeEzberleme
             this.button_KelimeEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_KelimeEkle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_KelimeEkle.ForeColor = System.Drawing.Color.White;
-            this.button_KelimeEkle.Location = new System.Drawing.Point(25, 174);
+            this.button_KelimeEkle.Location = new System.Drawing.Point(22, 192);
             this.button_KelimeEkle.Name = "button_KelimeEkle";
-            this.button_KelimeEkle.Size = new System.Drawing.Size(160, 48);
+            this.button_KelimeEkle.Size = new System.Drawing.Size(240, 48);
             this.button_KelimeEkle.TabIndex = 1;
             this.button_KelimeEkle.Text = "Kelime Ekle";
             this.button_KelimeEkle.UseVisualStyleBackColor = false;
@@ -133,9 +133,9 @@ namespace KelimeEzberleme
             this.button_KelimeEzberle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_KelimeEzberle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.button_KelimeEzberle.ForeColor = System.Drawing.Color.White;
-            this.button_KelimeEzberle.Location = new System.Drawing.Point(25, 93);
+            this.button_KelimeEzberle.Location = new System.Drawing.Point(22, 99);
             this.button_KelimeEzberle.Name = "button_KelimeEzberle";
-            this.button_KelimeEzberle.Size = new System.Drawing.Size(160, 48);
+            this.button_KelimeEzberle.Size = new System.Drawing.Size(240, 61);
             this.button_KelimeEzberle.TabIndex = 0;
             this.button_KelimeEzberle.Text = "Kelime Ezberle";
             this.button_KelimeEzberle.UseVisualStyleBackColor = false;

@@ -45,7 +45,7 @@
             this.label_kelime.AutoSize = true;
             this.label_kelime.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
             this.label_kelime.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label_kelime.Location = new System.Drawing.Point(382, 51);
+            this.label_kelime.Location = new System.Drawing.Point(382, 9);
             this.label_kelime.Name = "label_kelime";
             this.label_kelime.Size = new System.Drawing.Size(152, 54);
             this.label_kelime.TabIndex = 3;
@@ -59,7 +59,7 @@
             this.panelSecenekler.Controls.Add(this.radioButton_Sec2);
             this.panelSecenekler.Controls.Add(this.radioButton_Sec3);
             this.panelSecenekler.Controls.Add(this.radioButton_Sec4);
-            this.panelSecenekler.Location = new System.Drawing.Point(244, 131);
+            this.panelSecenekler.Location = new System.Drawing.Point(244, 89);
             this.panelSecenekler.Name = "panelSecenekler";
             this.panelSecenekler.Size = new System.Drawing.Size(430, 420);
             this.panelSecenekler.TabIndex = 4;
@@ -114,7 +114,7 @@
             this.button_Control.BackgroundImage = global::KelimeEzberleme.Properties.Resources.Checkmark_80px;
             this.button_Control.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Control.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Control.Location = new System.Drawing.Point(637, 578);
+            this.button_Control.Location = new System.Drawing.Point(680, 429);
             this.button_Control.Name = "button_Control";
             this.button_Control.Size = new System.Drawing.Size(92, 80);
             this.button_Control.TabIndex = 5;
@@ -123,7 +123,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(784, 161);
+            this.pictureBox1.Location = new System.Drawing.Point(784, 119);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 310);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,7 +136,7 @@
             this.button_ileri.BackgroundImage = global::KelimeEzberleme.Properties.Resources.right_96px;
             this.button_ileri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_ileri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ileri.Location = new System.Drawing.Point(974, 823);
+            this.button_ileri.Location = new System.Drawing.Point(962, 640);
             this.button_ileri.Name = "button_ileri";
             this.button_ileri.Size = new System.Drawing.Size(110, 70);
             this.button_ileri.TabIndex = 0;
@@ -148,11 +148,12 @@
             this.label_OrnekCumle.AutoSize = true;
             this.label_OrnekCumle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.label_OrnekCumle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.label_OrnekCumle.Location = new System.Drawing.Point(86, 702);
+            this.label_OrnekCumle.Location = new System.Drawing.Point(82, 530);
             this.label_OrnekCumle.Name = "label_OrnekCumle";
             this.label_OrnekCumle.Size = new System.Drawing.Size(182, 37);
             this.label_OrnekCumle.TabIndex = 13;
             this.label_OrnekCumle.Text = "Örnek Cümle";
+            this.label_OrnekCumle.Visible = false;
             // 
             // panelSayac
             // 
@@ -165,7 +166,7 @@
             this.panelSayac.Controls.Add(this.label_GunlukKelimeSayisi);
             this.panelSayac.Controls.Add(this.label_CalisilanKelimeSayisi);
             this.panelSayac.Controls.Add(this.label_KalanKelimeSayisi);
-            this.panelSayac.Location = new System.Drawing.Point(311, 789);
+            this.panelSayac.Location = new System.Drawing.Point(271, 605);
             this.panelSayac.Name = "panelSayac";
             this.panelSayac.Size = new System.Drawing.Size(492, 121);
             this.panelSayac.TabIndex = 20;
@@ -245,7 +246,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1162, 939);
+            this.ClientSize = new System.Drawing.Size(1162, 763);
             this.Controls.Add(this.label_kelime);
             this.Controls.Add(this.panelSecenekler);
             this.Controls.Add(this.pictureBox1);
@@ -256,7 +257,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormSinav";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kelime Testi";
             this.Load += new System.EventHandler(this.FormSinav_Load);
             this.panelSecenekler.ResumeLayout(false);
