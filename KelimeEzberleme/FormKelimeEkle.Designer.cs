@@ -130,12 +130,14 @@ namespace KelimeEzberleme
             // 
             // comboBox_Konular
             // 
+            this.comboBox_Konular.DisplayMember = "SubjectAciklama";
             this.comboBox_Konular.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Konular.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.comboBox_Konular.Location = new System.Drawing.Point(200, 167);
             this.comboBox_Konular.Name = "comboBox_Konular";
             this.comboBox_Konular.Size = new System.Drawing.Size(220, 36);
             this.comboBox_Konular.TabIndex = 6;
+            this.comboBox_Konular.ValueMember = "SubjectID";
             // 
             // textBox_OrnekCumle
             // 
@@ -215,6 +217,7 @@ namespace KelimeEzberleme
             this.Name = "FormKelimeEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kelime Ekle";
+            this.Load += new System.EventHandler(this.FormKelimeEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

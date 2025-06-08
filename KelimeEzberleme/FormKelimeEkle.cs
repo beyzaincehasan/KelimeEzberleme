@@ -98,5 +98,7 @@ namespace KelimeEzberleme
         {
             konugetir();
         }
+
+      
     }
 }
