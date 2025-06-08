@@ -14,7 +14,7 @@ Projeyi indirin veya klonlayın:
 bash
 Kopyala
 Düzenle
-git clone 
+git clone https://github.com/beyzaincehasan/KelimeEzberleme.git
 Visual Studio ile açın:
 KelimeEzberleme.sln dosyasını Visual Studio ile açın.
 Çalıştırın:
