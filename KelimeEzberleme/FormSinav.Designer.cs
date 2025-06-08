@@ -25,7 +25,6 @@
             this.radioButton_Sec4 = new System.Windows.Forms.RadioButton();
             this.button_Control = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button_geri = new System.Windows.Forms.Button();
             this.button_ileri = new System.Windows.Forms.Button();
             this.label_OrnekCumle = new System.Windows.Forms.Label();
             this.panelSayac = new System.Windows.Forms.Panel();
@@ -74,6 +73,7 @@
             this.radioButton_Sec1.Size = new System.Drawing.Size(17, 16);
             this.radioButton_Sec1.TabIndex = 100;
             this.radioButton_Sec1.UseVisualStyleBackColor = true;
+            this.radioButton_Sec1.CheckedChanged += new System.EventHandler(this.radioButton_Sec1_CheckedChanged);
             // 
             // radioButton_Sec2
             // 
@@ -84,6 +84,7 @@
             this.radioButton_Sec2.Size = new System.Drawing.Size(17, 16);
             this.radioButton_Sec2.TabIndex = 101;
             this.radioButton_Sec2.UseVisualStyleBackColor = true;
+            this.radioButton_Sec2.CheckedChanged += new System.EventHandler(this.radioButton_Sec2_CheckedChanged);
             // 
             // radioButton_Sec3
             // 
@@ -94,6 +95,7 @@
             this.radioButton_Sec3.Size = new System.Drawing.Size(17, 16);
             this.radioButton_Sec3.TabIndex = 102;
             this.radioButton_Sec3.UseVisualStyleBackColor = true;
+            this.radioButton_Sec3.CheckedChanged += new System.EventHandler(this.radioButton_Sec3_CheckedChanged);
             // 
             // radioButton_Sec4
             // 
@@ -104,6 +106,7 @@
             this.radioButton_Sec4.Size = new System.Drawing.Size(17, 16);
             this.radioButton_Sec4.TabIndex = 103;
             this.radioButton_Sec4.UseVisualStyleBackColor = true;
+            this.radioButton_Sec4.CheckedChanged += new System.EventHandler(this.radioButton_Sec4_CheckedChanged);
             // 
             // button_Control
             // 
@@ -116,6 +119,7 @@
             this.button_Control.Size = new System.Drawing.Size(92, 80);
             this.button_Control.TabIndex = 5;
             this.button_Control.UseVisualStyleBackColor = false;
+            this.button_Control.Click += new System.EventHandler(this.button_Control_Click);
             // 
             // pictureBox1
             // 
@@ -125,18 +129,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // button_geri
-            // 
-            this.button_geri.BackColor = System.Drawing.Color.SeaGreen;
-            this.button_geri.BackgroundImage = global::KelimeEzberleme.Properties.Resources.left_96px;
-            this.button_geri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_geri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_geri.Location = new System.Drawing.Point(38, 823);
-            this.button_geri.Name = "button_geri";
-            this.button_geri.Size = new System.Drawing.Size(110, 70);
-            this.button_geri.TabIndex = 1;
-            this.button_geri.UseVisualStyleBackColor = false;
             // 
             // button_ileri
             // 
@@ -149,6 +141,7 @@
             this.button_ileri.Size = new System.Drawing.Size(110, 70);
             this.button_ileri.TabIndex = 0;
             this.button_ileri.UseVisualStyleBackColor = false;
+            this.button_ileri.Click += new System.EventHandler(this.button_ileri_Click);
             // 
             // label_OrnekCumle
             // 
@@ -257,7 +250,6 @@
             this.Controls.Add(this.panelSecenekler);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_Control);
-            this.Controls.Add(this.button_geri);
             this.Controls.Add(this.button_ileri);
             this.Controls.Add(this.label_OrnekCumle);
             this.Controls.Add(this.panelSayac);
@@ -287,7 +279,6 @@
         private System.Windows.Forms.RadioButton radioButton_Sec4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_Control;
-        private System.Windows.Forms.Button button_geri;
         private System.Windows.Forms.Button button_ileri;
         private System.Windows.Forms.Label label_OrnekCumle;
         private System.Windows.Forms.Panel panelSayac;

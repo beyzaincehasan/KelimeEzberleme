@@ -21,16 +21,21 @@ namespace KelimeEzberleme
 
         private void button_Kayit_Click(object sender, EventArgs e)
         {
+
             try
             {
-
-                if (textBox_Sifre.Text != textBox_Sifre_Tekrar.Text)
+                if(textBox_KullaniciAdi.Text=="" || textBox_Mail.Text=="")//mail ve kullanıcı adı kontrolü
+                {
+                    MessageBox.Show("Kullanıcı adı ya da mail adresi boş olamaz");
+                    return;
+                }
+                if (textBox_Sifre.Text != textBox_Sifre_Tekrar.Text)//şifre kontrolü
                 {
                     MessageBox.Show("Şifreler Aynı Değil");
                     return;
                 }
 
-                SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+                SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
                 con.Open();
                 SqlCommand komut = new SqlCommand("kullanicikaydet @UserName="+ textBox_KullaniciAdi.Text + "" +
                     ",@FirstName='" + textBox_Ad.Text + "' " +

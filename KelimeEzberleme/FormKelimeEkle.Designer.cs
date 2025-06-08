@@ -142,7 +142,7 @@ namespace KelimeEzberleme
             this.textBox_OrnekCumle.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_OrnekCumle.Location = new System.Drawing.Point(200, 212);
             this.textBox_OrnekCumle.Name = "textBox_OrnekCumle";
-            this.textBox_OrnekCumle.Size = new System.Drawing.Size(220, 34);
+            this.textBox_OrnekCumle.Size = new System.Drawing.Size(342, 34);
             this.textBox_OrnekCumle.TabIndex = 8;
             // 
             // textBox_Gorsel_Url

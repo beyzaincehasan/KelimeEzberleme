@@ -17,7 +17,7 @@ namespace KelimeEzberleme
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
         private DataSet ds = new DataSet();
         private void button_Kaydet_Click(object sender, EventArgs e)
         {

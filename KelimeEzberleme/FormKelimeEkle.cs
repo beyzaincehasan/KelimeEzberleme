@@ -17,7 +17,8 @@ namespace KelimeEzberleme
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        //veritabanı bağlantısı
+        SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -58,13 +59,13 @@ namespace KelimeEzberleme
         {
             string dosya;
             OpenFileDialog ResmiAc = new OpenFileDialog();
-            ResmiAc.Filter = "resim dosyaları(*.jpg)|*.jpg|bütün dosyalar|*.*";
+            ResmiAc.Filter = "resim dosyaları(*.jpg)|*.jpg|bütün dosyalar|*.*";//görsel seçme
 
 
 
-            if (ResmiAc.ShowDialog() == DialogResult.OK)
+            if (ResmiAc.ShowDialog() == DialogResult.OK)//görsel seçildiyse
             {
-                pictureBox1.Image = Image.FromFile(ResmiAc.FileName);
+                pictureBox1.Image = Image.FromFile(ResmiAc.FileName);//pictureBox'a görsel yolu tanımlandı
                 dosya = ResmiAc.FileName;
                 Convert.ToString(dosya);
                 textBox_Gorsel_Url.Text = dosya;
@@ -72,7 +73,7 @@ namespace KelimeEzberleme
 
         }
 
-        void konugetir()
+        void konugetir()//veritabanındaki konular comboBox'a getirildi
         {
             
 

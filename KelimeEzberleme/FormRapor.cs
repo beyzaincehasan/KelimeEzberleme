@@ -17,7 +17,7 @@ namespace KelimeEzberleme
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
         private void FormRapor_Load(object sender, EventArgs e)
         {
             con.Close();
@@ -30,7 +30,7 @@ namespace KelimeEzberleme
 
             da.Fill(dt);
 
-            dataGridView_Rapor.DataSource = dt;
+            dataGridView_Rapor.DataSource = dt;//sql sorgusundan gelen veriler dataTable ile dataGridView e yüklendi
 
             con.Close();
         }

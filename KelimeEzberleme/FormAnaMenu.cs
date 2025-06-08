@@ -53,5 +53,10 @@ namespace KelimeEzberleme
             FormBulmaca bul = new FormBulmaca();
             bul.ShowDialog();
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

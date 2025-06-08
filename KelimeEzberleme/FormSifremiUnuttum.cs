@@ -22,30 +22,26 @@ namespace KelimeEzberleme
 
         private void button_Kaydet_Click(object sender, EventArgs e)
         {
-            if (DogrulamaKodu!=textBox_Dogrulama.Text)
-            {
-                MessageBox.Show("Doğrulama Kodu Hatalı");
-                return;
-            }
-
-            if (textBox_sifre1.Text!=textBox_sifre2.Text)
-            {
-                MessageBox.Show("Şifreler Aynı Değil");
-                return;
-            }
-
+            
             try
             {
 
-                if (textBox_sifre1.Text != textBox_sifre2.Text)
+                if (DogrulamaKodu != textBox_Dogrulama.Text)//doğrulama kodu kontrolü
+                {
+                    MessageBox.Show("Doğrulama Kodu Hatalı");
+                    return;
+                }
+
+                if (textBox_sifre1.Text != textBox_sifre2.Text)//şifre kontrolü
                 {
                     MessageBox.Show("Şifreler Aynı Değil");
                     return;
                 }
 
+
                 con.Close();
                 con.Open();
-                SqlCommand komut = new SqlCommand("update Users set Password='"+textBox_sifre2.Text+"'where Mail='"+textBox_Eposta.Text+"' ", con);
+                SqlCommand komut = new SqlCommand("update Users set Password='"+textBox_sifre2.Text+"'where Mail='"+textBox_Eposta.Text+"' ", con);//veritabanında şifre değişikliği
 
 
                 komut.ExecuteNonQuery();
@@ -76,10 +72,10 @@ namespace KelimeEzberleme
 
         }
 
-        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
         void mailkontrol()
         {
-            if ( textBox_Eposta.Text == "")
+            if ( textBox_Eposta.Text == "")//mail kontrolü
             {
                 MessageBox.Show("Mail Adresi Boş Olamaz");
                 return;
@@ -88,7 +84,7 @@ namespace KelimeEzberleme
             con.Open();
             SqlDataAdapter da = new SqlDataAdapter();
             SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "select Mail from Users where Mail = '" + textBox_Eposta.Text + "'";
+            cmd.CommandText = "select Mail from Users where Mail = '" + textBox_Eposta.Text + "'";//veritabanından mail kontrolü
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
 
@@ -118,28 +114,22 @@ namespace KelimeEzberleme
         {
             try
             {
-                Random rand = new Random();
+                Random rand = new Random();//rastgele doğrulama kodu üretildi
               
                 int stringlen = rand.Next(4, 10);
                 int randValue;
                 string str = "";
                 char letter;
                 for (int i = 0; i < stringlen; i++)
-                {
-
-                   
+                {                   
                     randValue = rand.Next(0, 26);
-
                    
                     letter = Convert.ToChar(randValue + 65);
-
                  
-                    str = str + letter;
-                }
+                    str = str + letter;                }
                
 
                 DogrulamaKodu = str.ToString();
-
 
                 SmtpClient sc = new SmtpClient();
                 sc.Port = 587;
@@ -154,7 +144,7 @@ namespace KelimeEzberleme
 
                 mail.To.Add(textBox_Eposta.Text);
 
-
+                //mail içeriği
                 mail.Subject = "Şifre Yenileme Kodu"; mail.IsBodyHtml = true; mail.Body ="Şifre yenilemek için doğrulama kodunuz :"+ DogrulamaKodu;
 
 

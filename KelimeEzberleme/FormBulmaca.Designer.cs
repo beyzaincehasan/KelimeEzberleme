@@ -39,7 +39,7 @@ namespace KelimeEzberleme
             // panelKutu
             // 
             this.panelKutu.AutoScroll = true;
-            this.panelKutu.Location = new System.Drawing.Point(41, 129);
+            this.panelKutu.Location = new System.Drawing.Point(75, 141);
             this.panelKutu.Name = "panelKutu";
             this.panelKutu.Size = new System.Drawing.Size(411, 256);
             this.panelKutu.TabIndex = 0;
@@ -47,28 +47,32 @@ namespace KelimeEzberleme
             // txtTahmin
             // 
             this.txtTahmin.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.txtTahmin.Location = new System.Drawing.Point(37, 479);
+            this.txtTahmin.Location = new System.Drawing.Point(101, 496);
             this.txtTahmin.MaxLength = 1;
             this.txtTahmin.Name = "txtTahmin";
             this.txtTahmin.Size = new System.Drawing.Size(137, 39);
             this.txtTahmin.TabIndex = 1;
+            this.txtTahmin.TextChanged += new System.EventHandler(this.txtTahmin_TextChanged);
             // 
             // btnTahminEt
             // 
-            this.btnTahminEt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnTahminEt.Location = new System.Drawing.Point(192, 479);
+            this.btnTahminEt.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnTahminEt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTahminEt.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.btnTahminEt.ForeColor = System.Drawing.Color.White;
+            this.btnTahminEt.Location = new System.Drawing.Point(303, 492);
             this.btnTahminEt.Name = "btnTahminEt";
-            this.btnTahminEt.Size = new System.Drawing.Size(137, 36);
+            this.btnTahminEt.Size = new System.Drawing.Size(150, 43);
             this.btnTahminEt.TabIndex = 2;
             this.btnTahminEt.Text = "Tahmin Et";
-            this.btnTahminEt.UseVisualStyleBackColor = true;
+            this.btnTahminEt.UseVisualStyleBackColor = false;
             this.btnTahminEt.Click += new System.EventHandler(this.btnTahminEt_Click);
             // 
             // lblKalanHak
             // 
             this.lblKalanHak.AutoSize = true;
             this.lblKalanHak.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblKalanHak.Location = new System.Drawing.Point(37, 11);
+            this.lblKalanHak.Location = new System.Drawing.Point(47, 40);
             this.lblKalanHak.Name = "lblKalanHak";
             this.lblKalanHak.Size = new System.Drawing.Size(97, 23);
             this.lblKalanHak.TabIndex = 3;
@@ -85,6 +89,7 @@ namespace KelimeEzberleme
             // 
             // FormBulmaca
             // 
+            this.AcceptButton = this.btnTahminEt;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 600);

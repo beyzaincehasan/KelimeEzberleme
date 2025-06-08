@@ -18,7 +18,7 @@ namespace KelimeEzberleme
         {
             InitializeComponent();
         }
-
+        //değişkenler
         string SoruWordID;
         string SoruEngWordName;
         string SoruTurkWordName;
@@ -28,8 +28,8 @@ namespace KelimeEzberleme
         string CevapEngWordName;
         string CevapTurkWordName;
         string OrnekCumle;
-
-        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        //veritabanı bağlantısı
+        SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
         private DataSet ds = new DataSet();
         private void FormSinav_Load(object sender, EventArgs e)
         {
@@ -80,17 +80,18 @@ namespace KelimeEzberleme
 
                 SqlDataAdapter da = new SqlDataAdapter();
                 SqlCommand cmd = con.CreateCommand();
-                cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";
+                
+                cmd.CommandText = "kelimegetir @UserID=" + ((FormLogin)Application.OpenForms["FormLogin"]).UserID.ToString() + "";//kullanıcı bazlı rastgele kelime
                 da.SelectCommand = cmd;
                 DataSet ds = new DataSet();
                 
                 da.Fill(ds);
-                label_kelime.Text = ds.Tables[0].Rows[0][0].ToString();
+                label_kelime.Text = ds.Tables[0].Rows[0][0].ToString();//sorulacak ingilizce kelime
                 SoruWordID =        ds.Tables[0].Rows[0][2].ToString();
                 SoruTurkWordName =  ds.Tables[0].Rows[0][1].ToString();
                 OrnekCumle=         ds.Tables[0].Rows[0][4].ToString();
 
-                radioButton_Sec1.Text = ds.Tables[1].Rows[0][1].ToString();
+                radioButton_Sec1.Text = ds.Tables[1].Rows[0][1].ToString();//veritabanından rastgele gelen şıklar radioButton'a atanıyor
                 radioButton_Sec2.Text = ds.Tables[1].Rows[1][1].ToString();
                 radioButton_Sec3.Text = ds.Tables[1].Rows[2][1].ToString();
                 radioButton_Sec4.Text = ds.Tables[1].Rows[3][1].ToString();
@@ -228,5 +229,7 @@ namespace KelimeEzberleme
             panelSecenekler.Enabled = true;
             label_OrnekCumle.Visible = false;
         }
+
+     
     }
 }

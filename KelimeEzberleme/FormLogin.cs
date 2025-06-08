@@ -17,13 +17,13 @@ namespace KelimeEzberleme
         {
             InitializeComponent();
         }
-
+        //değişkenler
         public string UserName;
         public string UserID;
         public string FirstName;
         public string LastName;
-
-     SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        //veritabanı bağlantısı
+     SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
         private void button_Giris_Click(object sender, EventArgs e)
         {
             try
@@ -100,15 +100,7 @@ namespace KelimeEzberleme
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            GraphicsPath path = new GraphicsPath();
-          
-            int radius = 35; // Ne kadar oval olmasını istiyorsan artır/azalt
-            path.AddArc(0, 0, radius, radius, 180, 90);
-            path.AddArc(button_Giris.Width - radius, 0, radius, radius, 270, 90);
-            path.AddArc(button_Giris.Width - radius, button_Giris.Height - radius, radius, radius, 0, 90);
-            path.AddArc(0, button_Giris.Height - radius, radius, radius, 90, 90);
-            path.CloseAllFigures();
-            button_Giris.Region = new Region(path);
+            
         }
 
         private void label1_Click_1(object sender, EventArgs e)

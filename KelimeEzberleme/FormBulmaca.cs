@@ -17,7 +17,7 @@ namespace KelimeEzberleme
         private int maxAttempts = 5;
         private int attemptsLeft;
         //private List<string> learnedWords = new List<string> { "APPLE", "PLANE", "GRAPE", "WORDS", "WORMS" }; // Örnek kelimeler
-        SqlConnection con = new SqlConnection("server=localhost;database=KelimeEzberleme;integrated security=True");
+        SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;database=KelimeEzberleme;integrated security=True");
 
         public FormBulmaca()
         {
@@ -127,6 +127,17 @@ namespace KelimeEzberleme
             txtTahmin.Clear();
         }
 
+        private void txtTahmin_TextChanged(object sender, EventArgs e)
+        {
+            int selStart = txtTahmin.SelectionStart;
+            string upper = txtTahmin.Text.ToUpper();
+
+            if (txtTahmin.Text != upper)
+            {
+                txtTahmin.Text = upper;
+                txtTahmin.SelectionStart = selStart;
+            }
+        }
     }
 
 
